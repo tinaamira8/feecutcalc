@@ -50,3 +50,7 @@ Quote links preserve inputs in query parameters; those URLs can enter browser hi
 Dedicated pages in `src/pages/` provide the 192-guide directory, methodology, contact composer, privacy policy and terms. The site uses the FeeMargin brand at https://feecutcalc.com, with contact@feecutcalc.com as its published contact address. Terms select Victoria, Australia. Verify mailbox delivery separately before relying on enquiries.
 
 Calculator quote state uses URL fragments, which are not included in HTTP requests. Legacy query links migrate in-browser after their initial request. `npm test` includes round-trip and migration coverage. The contact composer opens an email client and never sends automatically. The shared HTML head loads the Google AdSense script for ca-pub-1781335642360761 on all generated pages. Consent configuration and publisher approval remain separate requirements in AdSense.
+
+### Calculator banner placement
+
+`CalculatorAd` renders immediately below the calculator inputs/results and above the freelance comparison table on both calculator routes and all generated scenario pages. Set `VITE_ADSENSE_CALCULATOR_SLOT` to the real numeric `data-ad-slot` from an AdSense display ad unit, then rebuild/redeploy. An empty value renders no banner and queues no banner request. The publisher ID is already configured in `AdBanner`; an ad-unit slot ID is a separate value.
