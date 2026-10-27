@@ -47,6 +47,6 @@ Quote links preserve inputs in query parameters; those URLs can enter browser hi
 
 ## Trust pages and quote privacy
 
-Dedicated pages in `src/pages/` provide the 192-guide directory, methodology, contact composer, privacy policy and terms. The policy uses the requested FeeMargin identity and contact@feemargin.com; the live deployment remains feecutcalc.com. Terms select Victoria, Australia. Verify mailbox delivery separately before relying on enquiries.
+Dedicated pages in `src/pages/` provide the 192-guide directory, methodology, contact composer, privacy policy and terms. The site uses the FeeMargin brand at https://feecutcalc.com, with contact@feecutcalc.com as its published contact address. Terms select Victoria, Australia. Verify mailbox delivery separately before relying on enquiries.
 
 Calculator quote state uses URL fragments, which are not included in HTTP requests. Legacy query links migrate in-browser after their initial request. `npm test` includes round-trip and migration coverage. The contact composer opens an email client and never sends automatically. No advertising scripts are activated by these pages; consent implementation and publisher approval remain separate requirements.
