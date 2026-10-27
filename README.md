@@ -44,3 +44,9 @@ No implementation can guarantee indexing or Google AdSense approval. The app has
 USD, US-oriented per-transaction assumptions. FX is applied to gross. Fees round individually to cents; reverse mode searches for the smallest invoice cent covering a target. Marketplace fees apply to item price plus buyer shipping. COGS and actual fulfillment remain separate. Subscription allocation, Amazon fulfillment, category variations, taxes and promotional fees require user inputs. Third-party Shopify processing is editable in addition to Shopify's assumed gateway surcharge. Etsy ad caps are not automated. Break-even is a pre-rounding continuous price, while fee breakdowns round to cents.
 
 Quote links preserve inputs in query parameters; those URLs can enter browser history and hosting logs. CSV exports happen locally. Theme preference is stored locally. Do not enter confidential identifiers.
+
+## Trust pages and quote privacy
+
+Dedicated pages in `src/pages/` provide the 192-guide directory, methodology, contact composer, privacy policy and terms. The policy uses the requested FeeMargin identity and contact@feemargin.com; the live deployment remains feecutcalc.com. Terms select Victoria, Australia. Verify mailbox delivery separately before relying on enquiries.
+
+Calculator quote state uses URL fragments, which are not included in HTTP requests. Legacy query links migrate in-browser after their initial request. `npm test` includes round-trip and migration coverage. The contact composer opens an email client and never sends automatically. No advertising scripts are activated by these pages; consent implementation and publisher approval remain separate requirements.

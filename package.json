@@ -10,7 +10,7 @@
     "build": "vite build && node scripts/generate-seo-pages.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "check": "tsc --noEmit",
-    "test": "tsx --test scripts/math.test.ts",
+    "test": "tsx --test scripts/math.test.ts scripts/quote-url.test.ts",
     "audit:build": "node scripts/audit-build.mjs"
   },
   "dependencies": {
