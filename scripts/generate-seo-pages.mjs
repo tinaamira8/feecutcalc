@@ -3,8 +3,6 @@ import path from 'node:path';
 import { register } from 'tsx/esm/api';
 register();
 const {freelance,ecom,payout,reverse,profit,money}=await import('../src/data/fees.ts');
-const {DEFAULT_ORIGIN}=await import('../src/components/site/seo.tsx');
-fs.writeFileSync('public/robots.txt',`User-agent: *\nAllow: /\n\nUser-agent: Mediapartners-Google\nAllow: /\n\nUser-agent: AdsBot-Google\nAllow: /\n\nSitemap: ${DEFAULT_ORIGIN}/sitemap.xml\n`);
 const pages=[];
 for(const [kind,platforms,amounts] of [['freelance',freelance,[100,250,500,1000,2500,5000]],['ecom',ecom,[15,25,50,100,250,500]]]) for(const p of platforms) for(const amount of amounts) for(const mode of (kind==='freelance'?['forward','reverse']:['standard','advertising'])){
  const index=pages.length;const other=platforms[(platforms.indexOf(p)+1)%platforms.length];const net=kind==='freelance'?payout(amount,p).net:profit(amount,0,amount*.3,5,p,mode==='advertising'?15:0,'percent',0).net;
