@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 
+type ConsentCallback = { CONSENT_API_READY: () => void };
+
 declare global {
   interface Window {
     googlefc?: {
-      callbackQueue?: { push: (callback: { CONSENT_API_READY: () => void }) => unknown };
+      callbackQueue?: { push: (callback: ConsentCallback) => unknown };
       showRevocationMessage?: () => void;
     };
   }
@@ -15,8 +17,8 @@ export function PrivacyChoices() {
   useEffect(() => {
     let active = true;
     const googlefc = window.googlefc = window.googlefc || {};
-    googlefc.callbackQueue = googlefc.callbackQueue || [];
-    googlefc.callbackQueue.push({ CONSENT_API_READY: () => {
+    const queue = googlefc.callbackQueue = googlefc.callbackQueue || ([] as ConsentCallback[]);
+    queue.push({ CONSENT_API_READY: () => {
       if (active) setReady(typeof window.googlefc?.showRevocationMessage === 'function');
     }});
     return () => { active = false; };
