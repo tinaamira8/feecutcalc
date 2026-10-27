@@ -1,0 +1,4 @@
+import {renderToString} from 'react-dom/server';
+import App,{pageInfo} from './App';
+import {metadata,DEFAULT_ORIGIN} from './components/site/seo';
+export function render(path:string){const {page,title,description}=pageInfo(path);const schemas:unknown[]=[{'@context':'https://schema.org','@type':'SoftwareApplication',name:'FeeMargin',applicationCategory:'FinanceApplication',operatingSystem:'Any',offers:{'@type':'Offer',price:'0',priceCurrency:'USD'}},{'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:DEFAULT_ORIGIN+'/'},...(path!=='/'?[{'@type':'ListItem',position:2,name:title,item:DEFAULT_ORIGIN+path}]:[])]}];if(page)schemas.push({'@context':'https://schema.org','@type':'FAQPage',mainEntity:page.faqs.map(f=>({'@type':'Question',name:f.q,acceptedAnswer:{'@type':'Answer',text:f.a}}))});return {html:renderToString(<App path={path}/>),head:metadata(path,title,description,schemas)};}

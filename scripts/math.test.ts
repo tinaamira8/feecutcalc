@@ -1,0 +1,10 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {freelance,ecom,payout,reverse,profit} from '../src/data/fees';
+import pages from '../src/data/seo-pages.json';
+test('Stripe known payout',()=>assert.equal(payout(1000,freelance[0]).net,970.7));
+test('reverse invoice meets target at minimum cent across providers, FX and sizes',()=>{for(const p of freelance)for(const amount of [0,.01,10,100,1000,99999])for(const fx of [0,2,4]){const gross=reverse(amount,p,fx);assert.ok(payout(gross,p,fx).net>=amount,`${p.id} ${amount}`);if(gross>0)assert.ok(payout(gross-.01,p,fx).net<amount,`${p.id} minimal ${amount}`);}});
+test('Freelancer minimum is applied',()=>assert.equal(payout(10,freelance[5]).service,5));
+test('Etsy fees, shipping, costs and ads reconcile',()=>{const r=profit(50,5,15,7,ecom[0],15,'percent',0);assert.equal(r.fees,13.93);assert.equal(r.net,19.07);assert.ok(Math.abs(profit(r.breakEven,5,15,7,ecom[0],15,'percent',0).net)<=.02)});
+test('undefined ROI and impossible reverse',()=>{assert.ok(Number.isNaN(profit(0,0,0,0,ecom[0],0,'fixed',0).roi));assert.ok(Number.isNaN(reverse(100,{...freelance[0],service:100})))});
+test('192 unique guides with complete linking, FAQ and editorial length',()=>{assert.equal(pages.length,192);assert.equal(new Set(pages.map(p=>p.path)).size,pages.length);for(const p of pages){const count=p.prose.split(/\s+/).length;assert.ok(count>=190&&count<=230,`${p.path}: ${count} words`);assert.equal(p.faqs.length,3);assert.equal(p.related.length,4);assert.ok(p.related.every(link=>pages.some(x=>x.path===link)));}});
