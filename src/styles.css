@@ -9,3 +9,12 @@
 @media(max-width:760px){.site-header{height:auto;min-height:72px;flex-wrap:wrap;padding-top:18px;padding-bottom:15px;gap:14px}.site-header .site-nav{display:flex;position:static;order:3;flex-basis:100%;flex-direction:row;flex-wrap:wrap;gap:10px 20px;padding:0;border:0;background:none;font-size:11px}.site-header .header-actions{margin-left:auto}}
 
 .message-preview{white-space:pre-wrap;overflow-wrap:anywhere;padding:1rem;border:1px solid currentColor;border-radius:10px;font:inherit}.guide h2{font-size:1.05rem;line-height:1.4}.prose textarea{width:100%;box-sizing:border-box}.prose ol{padding-left:1.5rem}.prose li{margin-bottom:.7rem}.prose code{overflow-wrap:anywhere}
+
+/* Long-form editorial reading */
+.editorial-article {max-width:760px;margin-inline:auto;overflow-wrap:anywhere;}
+.editorial-article p {line-height:1.85;}
+.editorial-article h2 {scroll-margin-top:6rem;}
+.editorial-article nav {padding:1rem 1.5rem;border:1px solid currentColor;border-radius:12px;}
+.editorial-article li {margin-block:.65rem;}
+.article-meta {font-size:.875rem;}
+.article-next {margin-block:2rem;padding:1.25rem;border:1px solid currentColor;border-radius:12px;}

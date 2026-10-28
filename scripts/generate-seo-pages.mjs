@@ -1,3 +1,4 @@
+import articles from '../src/data/articles.json' with {type:'json'};
 import fs from 'node:fs';
 import path from 'node:path';
 import { register } from 'tsx/esm/api';
@@ -26,5 +27,5 @@ fs.writeFileSync('src/data/seo-pages.json',JSON.stringify(pages,null,2));
 console.log(`Generated ${pages.length} scenarios.`);
 if(!process.argv.includes('--data-only')&&fs.existsSync('dist/index.html')){
  const {createServer}=await import('vite');const server=await createServer({server:{middlewareMode:true},appType:'custom'});
- try{const {render}=await server.ssrLoadModule('/src/entry-server.tsx');const template=fs.readFileSync('dist/index.html','utf8');const routes=['/','/freelance-calculator','/ecom-calculator','/directory','/about','/contact','/privacy-policy','/terms-of-service',...pages.map(p=>p.path)];for(const route of routes){const {html,head}=render(route);const out=path.join('dist',route==='/'?'index.html':route.slice(1)+'/index.html');fs.mkdirSync(path.dirname(out),{recursive:true});fs.writeFileSync(out,template.replace('<!--seo-->',head).replace('<!--app-->',html));}const nf=render('/404');fs.writeFileSync('dist/404.html',template.replace('<!--seo-->',nf.head).replace('<!--app-->',nf.html));fs.copyFileSync('public/robots.txt','dist/robots.txt');console.log(`Prerendered ${routes.length} complete HTML pages.`);}finally{await server.close();fs.copyFileSync('public/robots.txt','dist/robots.txt');}
+ try{const {render}=await server.ssrLoadModule('/src/entry-server.tsx');const template=fs.readFileSync('dist/index.html','utf8');const routes=['/','/freelance-calculator','/ecom-calculator','/directory','/about','/contact','/privacy-policy','/terms-of-service','/articles',...articles.map(a=>a.path),...pages.map(p=>p.path)];for(const route of routes){const {html,head}=render(route);const out=path.join('dist',route==='/'?'index.html':route.slice(1)+'/index.html');fs.mkdirSync(path.dirname(out),{recursive:true});fs.writeFileSync(out,template.replace('<!--seo-->',head).replace('<!--app-->',html));}const nf=render('/404');fs.writeFileSync('dist/404.html',template.replace('<!--seo-->',nf.head).replace('<!--app-->',nf.html));fs.copyFileSync('public/robots.txt','dist/robots.txt');console.log(`Prerendered ${routes.length} complete HTML pages.`);}finally{await server.close();fs.copyFileSync('public/robots.txt','dist/robots.txt');}
 }

@@ -1,0 +1,411 @@
+[
+  {
+    "path": "/articles/reverse-invoice-without-undercharging",
+    "title": "How to reverse an invoice without undercharging",
+    "description": "Work backwards from your desired payout, including percentage fees, fixed charges and cent rounding.",
+    "category": "Freelance & Invoicing",
+    "calculator": "/freelance-calculator",
+    "published": "2026-10-29",
+    "sections": [
+      {
+        "heading": "Start with the amount you need to keep",
+        "paragraphs": [
+          "A client budget and your take-home target are different numbers. If a payment service deducts a fee from the invoice, quoting the target itself leaves you short. Reverse invoicing answers a precise question: what gross payment produces a chosen payout under a stated fee schedule? It does not determine what a client will accept or whether a separate surcharge is permitted.",
+          "Write down the target before opening the calculator. Also decide what “keep” means. A payout after payment fees still has to cover your software, time, business costs and any applicable taxes. If those costs matter to the quote, include them in the target instead of assuming the payout is personal income."
+        ]
+      },
+      {
+        "heading": "Why adding the percentage fails",
+        "paragraphs": [
+          "Consider an illustrative fee of 3% plus $0.30 and a desired payout of $500. Adding 3% and $0.30 produces a $515.30 invoice. But the percentage is charged on $515.30, not $500. With the percentage fee rounded to cents, the deduction is $15.46 plus $0.30, leaving $499.54.",
+          "For a single percentage rate r and fixed charge f, the starting formula is gross = (target + f) ÷ (1 − r). Here, $500.30 ÷ 0.97 is approximately $515.7732. An invoice of $515.78 leaves $500.01 under this rounding convention. A provider that rounds fee components differently can settle a cent differently."
+        ]
+      },
+      {
+        "heading": "Use the formula within its limits",
+        "paragraphs": [
+          "The formula assumes a constant percentage and a fixed fee. Minimum charges, tiered percentages and fees applied to different bases require additional rules. Do not add two percentages together when one applies to the original payment and the other applies only to the remaining balance. A total rate of 100% cannot be solved for a positive payout with this formula.",
+          "In the freelance calculator, choose Reverse invoice, enter the desired payout, then replace the preset with the fee shown in your account or contract. Check the fixed charge and any currency-conversion assumption. FeeMargin searches cent-denominated invoice amounts using its modeled fee rounding, so its answer can differ slightly from an unrounded spreadsheet formula."
+        ]
+      },
+      {
+        "heading": "Before you send the quote",
+        "paragraphs": [
+          "Save the assumptions alongside the quote and confirm whether the customer will pay in one transaction or several. Two payments may incur two fixed charges. Use the result to set a clearly communicated total price; it does not establish a right to pass a payment surcharge to the customer. Check the applicable agreement and rules separately."
+        ]
+      }
+    ],
+    "sources": []
+  },
+  {
+    "path": "/articles/effective-payment-fee-small-orders",
+    "title": "Why small payments have a higher effective fee",
+    "description": "Compare percentage-plus-fixed pricing using the actual transaction size, rather than the headline percentage.",
+    "category": "Freelance & Invoicing",
+    "calculator": "/freelance-calculator",
+    "published": "2026-10-29",
+    "sections": [
+      {
+        "heading": "Translate the fee into a percentage of the sale",
+        "paragraphs": [
+          "A payment fee has two useful descriptions: the dollars deducted and the effective percentage of the payment. Effective fee rate = total fee ÷ gross payment × 100. It answers how much of this particular payment is consumed by fees. It does not include every cost of running the business.",
+          "For a hypothetical 3% plus $0.30 schedule, a $10 payment costs $0.60, or 6%. A $100 payment costs $3.30, or 3.3%. A $1,000 payment costs $30.30, or 3.03%. The published percentage has not changed. The fixed component simply occupies a much larger share of the smaller payment."
+        ]
+      },
+      {
+        "heading": "Find where two schedules cross",
+        "paragraphs": [
+          "Suppose plan A charges 3% plus $0.30, while plan B charges 4% plus $0.10. These are invented schedules for comparison, not offers from named providers. At $10, A costs $0.60 and B costs $0.50. At $50, A costs $1.80 and B costs $2.10.",
+          "To find the crossover, solve 0.03 × payment + 0.30 = 0.04 × payment + 0.10. The answer is $20. Both cost $0.90 at that amount. Below $20, B is cheaper within this simplified model; above $20, A is cheaper. Monthly charges, minimum fees and different payment methods can change the comparison."
+        ]
+      },
+      {
+        "heading": "Model your order mix",
+        "paragraphs": [
+          "An average payment can conceal how often fixed charges occur. If 100 customers each pay $10, the sample 3% plus $0.30 schedule costs $60 in total. One $1,000 payment costs $30.30. Both produce $1,000 gross revenue, but they are different collections of transactions.",
+          "Build a small list of typical payment sizes and counts. Calculate fees for each size, multiply by the number of payments, and add the totals. Include separate deposit and balance payments if that is how clients actually pay. Avoid using a single monthly revenue number as though it were one transaction."
+        ]
+      },
+      {
+        "heading": "Apply the comparison to a real account",
+        "paragraphs": [
+          "Stripe’s US standard online domestic-card headline price is 2.9% plus $0.30 at the source review date. That is a specific product and market, not a global rate. Use your own agreement for negotiated pricing, international cards or other payment methods.",
+          "Enter each typical amount in the freelance calculator and inspect the dollar deduction. Compare services only after confirming they meet the same needs, including payment method and customer access. A small fee saving may be outweighed by other operational differences that this arithmetic cannot measure."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Stripe: US pricing",
+        "url": "https://stripe.com/pricing"
+      }
+    ]
+  },
+  {
+    "path": "/articles/profit-margin-versus-markup",
+    "title": "Profit margin vs markup: the pricing mistake that changes your target",
+    "description": "Learn why a 30% markup is not a 30% margin, with a fee-aware product-pricing example.",
+    "category": "E-Commerce & Marketplaces",
+    "calculator": "/ecom-calculator",
+    "published": "2026-10-29",
+    "sections": [
+      {
+        "heading": "The denominator makes the difference",
+        "paragraphs": [
+          "Markup compares the amount above a chosen cost base with that cost base. Margin compares profit with revenue. If an item costs $40 and sells for $60, the $20 difference is a 50% markup on cost but only a 33.3% margin on revenue. Both statements can be correct, provided the same costs are included and the denominator is named.",
+          "In an online shop, the difference between selling price and product cost is rarely the final profit. Payment fees, marketplace charges, packaging, fulfillment and advertising can consume part of it. Call a number a product-cost margin if it excludes those costs; do not silently present it as take-home profit."
+        ]
+      },
+      {
+        "heading": "Build a complete example",
+        "paragraphs": [
+          "Assume a $50 sale with no separately collected shipping. Product cost is $20, fulfillment is $5, advertising is $4, and the illustrative fee schedule is 10% of revenue plus $0.50. Fees are $5.50, leaving $15.50 after these modeled costs. The modeled margin is $15.50 ÷ $50 = 31%.",
+          "Comparing the same $50 selling price only with the $20 product cost gives a 150% markup and a 60% product-cost margin. Neither reflects the additional $14.50 in fees, fulfillment and advertising. This is why a large markup can coexist with a much smaller final contribution."
+        ]
+      },
+      {
+        "heading": "Solve for a target margin",
+        "paragraphs": [
+          "With total non-percentage costs C, fixed transaction charge f, percentage fee r and desired margin m, the simplified target revenue is (C + f) ÷ (1 − r − m). All percentages must be decimals, and the denominator must be positive. This assumes the percentage fee and target margin use the same revenue base.",
+          "In the example, C is $29, f is $0.50, r is 0.10 and a 30% margin target is 0.30. Revenue is $29.50 ÷ 0.60, or approximately $49.17. Rounding and fee minimums can change the exact cent required. If advertising is a percentage rather than a fixed dollar amount, include it in the percentage side of the equation instead."
+        ]
+      },
+      {
+        "heading": "Read the result honestly",
+        "paragraphs": [
+          "Use the e-commerce calculator to enter product cost, fulfillment and advertising separately. Then test a sale price slightly above and below your target. The calculator’s net profit is a modeled transaction result, not an audited business profit. Monthly subscriptions, returns, owner labor and income taxes need separate treatment unless you have deliberately allocated them.",
+          "Keep your cost definition beside every margin target. Comparing a margin that includes fulfillment with one that excludes it is likely to mislead you even when both calculations are arithmetically correct."
+        ]
+      }
+    ],
+    "sources": []
+  },
+  {
+    "path": "/articles/shipping-charges-and-profit",
+    "title": "Charging for shipping does not make shipping cost-neutral",
+    "description": "Separate buyer-paid delivery from carrier costs and understand how percentage fees affect shipping recovery.",
+    "category": "E-Commerce & Marketplaces",
+    "calculator": "/ecom-calculator",
+    "published": "2026-10-29",
+    "sections": [
+      {
+        "heading": "Shipping collected is revenue; shipping paid is a cost",
+        "paragraphs": [
+          "A buyer paying $5 for delivery does not automatically reimburse a $5 carrier bill. If the selling channel charges a percentage on shipping receipts, part of that $5 is deducted before you pay the carrier. Packaging and handling can add further costs even when the postage amount looks fully covered.",
+          "Etsy’s transaction-fee policy includes buyer shipping and gift wrapping in its transaction-fee base. Other channels can use different definitions, including tax treatment. Read the rule for the particular fee rather than assuming that every charge uses the item price alone."
+        ]
+      },
+      {
+        "heading": "Follow one order through the calculation",
+        "paragraphs": [
+          "Imagine an item priced at $40 with $5 shipping collected. Product cost is $15, actual shipping is $6, and the illustrative combined fee is 10% of receipts plus $0.50. Revenue is $45. Fees are $5.00, leaving $19.00 after product cost and shipping. These numbers are a teaching example, not an Etsy fee quotation.",
+          "If the percentage fee were mistakenly applied only to the $40 item, estimated fees would be $4.50 and profit would appear $0.50 higher. Across 200 otherwise identical orders, that small error would overstate profit by $100. The mistake comes from the fee base, not from the percentage itself."
+        ]
+      },
+      {
+        "heading": "Work out the incremental shipping charge",
+        "paragraphs": [
+          "If the order already carries its fixed transaction fee, and only a 10% percentage fee applies to additional shipping revenue, recovering a $6 carrier cost requires $6 ÷ 0.90, or about $6.67. Charging exactly $6 leaves $5.40 after that incremental percentage fee.",
+          "This shortcut assumes that adding shipping does not trigger a new fixed charge, a fee tier or another rule. Include packaging and any handling allocation in the cost you want to recover. If the carrier quote is uncertain, calculate more than one scenario instead of hiding the uncertainty inside an unexplained shipping charge."
+        ]
+      },
+      {
+        "heading": "Compare free shipping fairly",
+        "paragraphs": [
+          "For the same $45 total receipt, an item at $45 with free shipping has the same arithmetic as a $40 item plus $5 shipping when all modeled fees depend only on total receipts. Buyer behavior, advertising presentation and platform rules may differ; the calculator does not predict those effects.",
+          "In FeeMargin, put buyer-paid shipping in Shipping charged and your actual delivery expense in Shipping, fulfillment & allocated overhead. Do not subtract shipping from the item price or enter the same carrier bill twice. Compare the final profit under both presentations before deciding which offer to test."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Etsy: Fees & Payments Policy",
+        "url": "https://www.etsy.com/legal/fees/"
+      }
+    ]
+  },
+  {
+    "path": "/articles/break-even-advertising-cost",
+    "title": "How much can you spend to acquire an order?",
+    "description": "Calculate break-even acquisition cost and see why a strong return on ad spend can still leave little profit.",
+    "category": "E-Commerce & Marketplaces",
+    "calculator": "/ecom-calculator",
+    "published": "2026-10-29",
+    "sections": [
+      {
+        "heading": "Start with contribution before advertising",
+        "paragraphs": [
+          "The maximum advertising spend an order can absorb is the amount left after its other included costs. This is a break-even limit, not a recommended budget. Spending the entire amount leaves nothing for omitted overhead or profit. Begin with the same revenue definition in every calculation, especially when reports treat shipping and tax differently.",
+          "Assume a $60 order, $22 product cost, $6 fulfillment and an illustrative payment-and-platform fee of 10% plus $0.50. Fees are $6.50. Before advertising, the order contributes $25.50. Spending $25.50 to obtain it would leave zero under these assumptions."
+        ]
+      },
+      {
+        "heading": "Translate between acquisition cost and ROAS",
+        "paragraphs": [
+          "Customer acquisition cost per order is advertising spend divided by attributed orders. Return on ad spend, or ROAS, is attributed revenue divided by advertising spend. They describe different sides of the same campaign and are only comparable when the reporting periods and attribution rules match.",
+          "For the $60 order, break-even ROAS is $60 ÷ $25.50, approximately 2.35. At a ROAS of 3, advertising costs $20 per order and modeled profit is only $5.50. A campaign producing three dollars of revenue for each advertising dollar can therefore leave a narrow contribution rather than a large profit."
+        ]
+      },
+      {
+        "heading": "Add a profit target",
+        "paragraphs": [
+          "Suppose you want $12 per order after advertising. Subtract that from the $25.50 pre-ad contribution: your maximum acquisition cost becomes $13.50. Required ROAS becomes $60 ÷ $13.50, approximately 4.44. This is a planning threshold for this specific basket and cost structure.",
+          "If repeat purchases are part of your strategy, model them separately using observed repeat-order contribution and timing. Do not justify a loss on the first order using an assumed lifetime value that has not been demonstrated. Cash spent today and revenue that might arrive later are not interchangeable."
+        ]
+      },
+      {
+        "heading": "Use actual campaign data carefully",
+        "paragraphs": [
+          "In the e-commerce calculator, choose fixed-dollar advertising to test a known acquisition cost. Percentage mode is useful when advertising is deliberately modeled as a share of receipts. Do not enter both a campaign allocation and the same advertising expense inside overhead, or you will count it twice.",
+          "Review multiple orders, not just one favorable basket. Discounts, returns and different product mixes change contribution. Also check whether attributed sales include customers who would have purchased without the campaign. FeeMargin can calculate a cost scenario; it cannot establish that an advertisement caused a sale or reconcile competing attribution systems."
+        ]
+      }
+    ],
+    "sources": []
+  },
+  {
+    "path": "/articles/refunds-returns-profit-buffer",
+    "title": "How to build a returns allowance into product pricing",
+    "description": "Use expected return costs without confusing refunded revenue, lost inventory and extra handling expenses.",
+    "category": "E-Commerce & Marketplaces",
+    "calculator": "/ecom-calculator",
+    "published": "2026-10-29",
+    "sections": [
+      {
+        "heading": "A successful-order estimate is only one outcome",
+        "paragraphs": [
+          "A normal sale calculator usually describes an order that stays sold. Returns introduce other outcomes: revenue may be refunded, shipping may already have been paid, inventory may or may not be resalable, and some original fees may remain. A profitable completed order can therefore overstate the average contribution across all orders placed.",
+          "Write down the retained-order and returned-order outcomes separately. Use your provider’s refund policy to determine which charges reverse. Do not assume every payment or marketplace fee is refunded. Stripe’s standard pricing page states that original transaction processing, Connect and currency-conversion fees are not returned on refunds; other arrangements need their own checks."
+        ]
+      },
+      {
+        "heading": "Use a two-outcome example",
+        "paragraphs": [
+          "Suppose a retained order contributes $18 after its included costs. A returned order instead produces a $12 loss after the refund, unrecovered shipping, retained fees and handling. Assume 8% of placed orders are returned. Expected contribution per placed order is 0.92 × $18 + 0.08 × −$12 = $15.60.",
+          "The difference from the all-retained estimate is $2.40 per order. It is not merely 8% of the $12 loss. A return both removes the positive contribution that a retained order would have produced and introduces the loss. Relative to the $18 baseline, each returned order changes the result by $30."
+        ]
+      },
+      {
+        "heading": "Avoid counting the inventory loss twice",
+        "paragraphs": [
+          "If returned stock can be sold again, the first return may not consume its entire product cost permanently. Inspection, repackaging, damage and markdowns still matter. If the item cannot be resold, include that loss in the returned-order outcome. Use a consistent inventory treatment across both outcomes.",
+          "For an allowance based on these assumptions, you could add $2.40 per order to allocated overhead while leaving the calculator’s normal-sale inputs unchanged. Label it as an expected return allowance. Do not also lower revenue or add the full returned-order loss elsewhere for the same allowance."
+        ]
+      },
+      {
+        "heading": "Replace assumptions with your own history",
+        "paragraphs": [
+          "Record the number of returned orders, not just the dollar value of refunds. Separate categories with different return behavior, and allow enough time for recent orders to complete their return window. A month with many new sales and few completed returns can make the rate look artificially low.",
+          "Test a higher-return scenario before relying on the average. This allowance is a pricing model rather than a cash-flow forecast: a cluster of refunds can require cash even if expected contribution remains positive. Keep the underlying assumptions available so you can update the estimate when delivery costs or refund terms change."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Stripe: pricing and refund fee information",
+        "url": "https://stripe.com/pricing"
+      }
+    ]
+  },
+  {
+    "path": "/articles/freelance-project-rate-and-unpaid-time",
+    "title": "Turn a freelance project payout into a realistic hourly rate",
+    "description": "Include preparation, revisions and administration when assessing a fixed-price project.",
+    "category": "Freelance & Invoicing",
+    "calculator": "/freelance-calculator",
+    "published": "2026-10-29",
+    "sections": [
+      {
+        "heading": "Separate the project price from earnings per hour",
+        "paragraphs": [
+          "A fixed-price project can look attractive before you count the hours outside the main deliverable. Scoping, meetings, file preparation, revisions and payment administration all consume time. The relevant hourly figure is the payout after included costs divided by the total time you expect to spend, not just the hours spent producing the final work.",
+          "Make a task estimate before choosing a price. If you expect 12 production hours, three hours of communication and two hours of revisions, the project occupies 17 hours. A quotation based only on the first 12 hours ignores nearly a third of the expected workload."
+        ]
+      },
+      {
+        "heading": "Work through the fee and time together",
+        "paragraphs": [
+          "Take a hypothetical $600 project with a 10% platform fee and no other payment charge. The payout is $540. Dividing by 17 hours gives approximately $31.76 per hour before other business expenses and taxes. Dividing by production time alone would produce $45 per hour, a substantially different impression.",
+          "Now include $30 of project-specific expenses. The amount remaining is $510, or $30 per hour across 17 hours. If revisions add three unexpected hours, it becomes $25.50 per hour. Small changes in scope can affect the outcome more than a small difference in payment-processing rates."
+        ]
+      },
+      {
+        "heading": "Reverse the calculation from a target",
+        "paragraphs": [
+          "Suppose your project target is $40 per total hour across the expected 17 hours, plus the $30 direct expense. You need a $710 payout after the modeled platform fee. At an illustrative 10% fee, the unrounded gross is $710 ÷ 0.90, or approximately $788.89. This is a cost-based planning reference, not a claim about the market price for your work.",
+          "Upwork currently describes a freelancer service-fee range of 0–15% per contract. A 10% example is not a universal Upwork rate. Use the fee displayed for the particular contract and check whether additional withdrawal or conversion costs affect the amount you ultimately receive."
+        ]
+      },
+      {
+        "heading": "Make the scope support the number",
+        "paragraphs": [
+          "Use the freelance calculator to test the gross quote and reverse payout target. Keep your time estimate in a separate project note, since the calculator does not track billable hours or project scope. Define the deliverables, included revisions and conditions for additional work clearly with the client.",
+          "After completion, record actual time and compare it with the estimate. Repeatedly exceeding the revision allowance is useful evidence for future pricing. A precise fee calculation helps, but it cannot compensate for a project estimate that omits a large part of the work."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "title": "Upwork: Freelancer Service Fee",
+        "url": "https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee"
+      }
+    ]
+  },
+  {
+    "path": "/articles/reconcile-calculator-with-platform-payout",
+    "title": "Why your platform payout differs from a fee estimate",
+    "description": "Use a transaction-by-transaction reconciliation to locate differences in fee bases, timing, refunds and conversion.",
+    "category": "Freelance & Invoicing",
+    "calculator": "/freelance-calculator",
+    "published": "2026-10-29",
+    "sections": [
+      {
+        "heading": "Compare the same thing first",
+        "paragraphs": [
+          "A calculator usually estimates a transaction. A bank deposit may combine many transactions and subtract refunds, adjustments, reserves or withdrawal charges. Comparing those two totals directly can make a correct estimate look wrong. Start with one completed order or payment and its detailed platform statement.",
+          "Record the gross charge, currency, payment date, fees and net amount for that transaction. Then note which payout batch includes it. An order placed near the end of a month may settle in a later period, so calendar-month sales and calendar-month deposits do not necessarily describe the same activity."
+        ]
+      },
+      {
+        "heading": "Reconstruct the settlement step by step",
+        "paragraphs": [
+          "Consider an illustrative $100 payment with $3.20 in processing and platform deductions. Its transaction-level net is $96.80. If a payout batch contains that transaction and a separate $20 refund adjustment, the batch could be $76.80 before any other deductions. The difference does not prove that the original fee rate was wrong.",
+          "Build a simple bridge: starting transaction net, plus other included transactions, minus refunds and adjustments, minus any payout charge, equals the payout total. Use the statement’s actual labels. Do not force every difference into a generic fee field, because that would make future transaction estimates less accurate."
+        ]
+      },
+      {
+        "heading": "Check the fee base and rounding",
+        "paragraphs": [
+          "If the transaction itself differs, inspect whether the percentage applies to item price, shipping, tax, or another amount. Confirm the account country, payment method and effective date of the schedule. A percentage charged on $110 is not equivalent to the same percentage charged on $100, even when the order headline displays $100.",
+          "Next check fixed charges, minimums and separate components. Rounding each component can produce a cent difference from rounding a combined total. For foreign-currency payments, record the settlement currency, exchange rate and explicit conversion charges. FeeMargin’s FX field models a markup on gross receipts; it does not reproduce a provider’s live conversion quote."
+        ]
+      },
+      {
+        "heading": "Save evidence for a useful correction",
+        "paragraphs": [
+          "Export the calculator breakdown and keep it with the platform statement. If reporting a discrepancy, include the platform, applicable country or plan, fee schedule link, date, fee base and expected arithmetic. Remove customer names, payment credentials and other private details before sharing evidence.",
+          "The contact page includes a fee-reporting guide. A well-specified example lets us distinguish an outdated preset from a different fee product or an unsupported rule. Until the difference is understood, use the platform’s documented transaction record for reconciliation rather than treating the calculator estimate as the authoritative settlement amount."
+        ]
+      }
+    ],
+    "sources": []
+  },
+  {
+    "path": "/articles/discounts-and-profit-volume",
+    "title": "How many extra sales does a discount need?",
+    "description": "Measure the contribution lost to a discount before relying on higher sales volume to replace it.",
+    "category": "E-Commerce & Marketplaces",
+    "calculator": "/ecom-calculator",
+    "published": "2026-10-29",
+    "sections": [
+      {
+        "heading": "A price cut does not reduce every cost",
+        "paragraphs": [
+          "Discounts lower revenue immediately, while product cost and fulfillment often stay the same. Percentage fees may decline with the price, but fixed charges usually do not decline within a simple per-order model. As a result, a 10% price discount can reduce per-order contribution by much more than 10%.",
+          "Before launching an offer, calculate the ordinary order and the discounted order with the same cost assumptions. Keep shipping treatment consistent. A free-shipping promotion should include the delivery amount you no longer collect, as well as any change in the item price."
+        ]
+      },
+      {
+        "heading": "Calculate the contribution lost",
+        "paragraphs": [
+          "Assume a $50 item, $20 product cost, $5 fulfillment, and an illustrative fee of 10% plus $0.50. With no advertising included, ordinary contribution is $50 − $20 − $5 − $5.50 = $19.50. A 10% discount reduces the sale price to $45 and fees to $5.00, leaving $15.00.",
+          "The $5 price cut lowers contribution by $4.50, or about 23.1%. The percentage fee falls by $0.50, which offsets only a small part of the discount. If the promotion also increases advertising or handling costs, the contribution decline will be larger."
+        ]
+      },
+      {
+        "heading": "Work out the additional volume required",
+        "paragraphs": [
+          "To preserve the same total contribution, divide ordinary contribution by discounted contribution. Here, $19.50 ÷ $15.00 = 1.30. You need 30% more orders to match the previous contribution, assuming the same costs, product mix and return behavior.",
+          "For example, 100 ordinary orders contribute $1,950. At the discounted contribution of $15 each, 130 orders are required to reach the same total. That also means packing 30 additional orders and acquiring or producing 30 additional units. Equal contribution does not necessarily mean equal workload or equal cash requirements."
+        ]
+      },
+      {
+        "heading": "Set a decision rule before the promotion",
+        "paragraphs": [
+          "Decide what success means: total contribution, clearance of aging stock, repeat purchases or another measurable objective. If discounted contribution is zero or negative, selling more cannot recover the normal contribution under this simple model. A different strategic justification would need its own evidence.",
+          "Use the e-commerce calculator twice and save both breakdowns. Include the actual advertising allocation and delivery costs for the offer. Afterward, compare incremental results with a suitable baseline rather than attributing all sales during the promotion to the discount. The arithmetic identifies the volume hurdle; it does not predict whether customers will supply that extra demand."
+        ]
+      }
+    ],
+    "sources": []
+  },
+  {
+    "path": "/articles/bundle-pricing-fixed-fees",
+    "title": "When product bundles save fees—and when they do not",
+    "description": "Compare separate orders with a bundle while accounting for fixed fees, discounts and fulfillment changes.",
+    "category": "E-Commerce & Marketplaces",
+    "calculator": "/ecom-calculator",
+    "published": "2026-10-29",
+    "sections": [
+      {
+        "heading": "Distinguish one order from two items",
+        "paragraphs": [
+          "A fixed payment fee is often attached to a transaction, while other charges may attach to a listing, unit or shipment. Putting two products in one order therefore does not automatically remove every fixed cost. Identify what actually triggers each fee before estimating a bundle saving.",
+          "This article uses a deliberately simplified schedule of 3% plus $0.30 per payment. It assumes one payment per order and no separate per-item fee. A real marketplace can add rules that make the result different. Use the schedule for your account rather than treating the example as a universal bundle benefit."
+        ]
+      },
+      {
+        "heading": "Compare equal revenue first",
+        "paragraphs": [
+          "Two separate $20 payments incur $0.90 each under the example schedule, for $1.80 in total fees. One $40 payment incurs $1.50. The saving is $0.30: one fixed payment charge. Percentage fees are unchanged because total revenue is still $40.",
+          "This comparison only applies when the customer would otherwise make two payments. If two items were already purchased together in one checkout, merely calling them a bundle would not create an additional payment-fee saving. That distinction prevents a packaging decision from being credited with a saving that already existed."
+        ]
+      },
+      {
+        "heading": "Add the discount and fulfillment effect",
+        "paragraphs": [
+          "Now suppose the bundle sells for $38 instead of $40. Its fee is $1.44, compared with $1.80 across the two original payments. The fee saving is $0.36, but revenue falls by $2. Before other changes, contribution is therefore $1.64 lower.",
+          "If shipping and packaging cost $1 less for the bundle, the remaining contribution reduction is $0.64. If the larger package instead costs more to ship, the outcome worsens. Check weight bands, packaging needs and picking time instead of assuming combined shipping is always cheaper."
+        ]
+      },
+      {
+        "heading": "Test the whole offer",
+        "paragraphs": [
+          "For a bundle in the e-commerce calculator, enter the total bundle price and combined product cost. Use the actual fulfillment cost for the combined package, not automatically twice the single-item amount. Include advertising on the same basis as your comparison orders. Model any separate per-item charges explicitly within your cost assumptions.",
+          "Also consider what happens if only one part of a bundle is returned or unavailable. Those operational questions can matter more than a small fixed-fee saving. Keep the original and bundle breakdowns together, state the number of payments assumed, and evaluate the offer on its total contribution rather than the apparent reduction in one fee line."
+        ]
+      }
+    ],
+    "sources": []
+  }
+]
