@@ -22,3 +22,8 @@ for(const article of articles){
  assert.ok(html.includes(article.calculator),`${article.path}: missing calculator link`);
 }
 console.log('PASS: 10 complete articles with schema, sitemap entries and calculator links.');
+
+const sitemapLocations=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+assert.equal(sitemapLocations.length,new Set(sitemapLocations).size,'Sitemap must not contain duplicate URLs');
+assert.deepEqual([...sitemapLocations].sort(),routes.map(r=>'https://feecutcalc.com'+r).sort(),'Sitemap must contain exactly the rendered public routes, excluding 404');
+console.log('PASS: unique sitemap URLs match public routes exactly.');
