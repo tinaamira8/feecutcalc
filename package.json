@@ -12,7 +12,8 @@
     "check": "tsc --noEmit",
     "test": "tsx --test scripts/math.test.ts scripts/quote-url.test.ts",
     "audit:build": "node scripts/audit-build.mjs",
-    "release": "npm run check && npm test && npm run build && npm run audit:build"
+    "release": "npm run check && npm test && npm run build && npm run audit:build",
+    "pretest": "node scripts/generate-seo-pages.mjs --data-only"
   },
   "dependencies": {
     "react": "^19.0.0",

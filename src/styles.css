@@ -18,3 +18,35 @@
 .editorial-article li {margin-block:.65rem;}
 .article-meta {font-size:.875rem;}
 .article-next {margin-block:2rem;padding:1.25rem;border:1px solid currentColor;border-radius:12px;}
+
+/* Mobile review: prevent grid min-content clipping and keep controls usable. */
+.calculator > *, .education > *, .fields > *, .hero > *, .demo-row > div, .metrics > div {min-width:0;}
+.input input, .search input, .demo-input input {min-width:0;max-width:100%;}
+.big-number {font-size:clamp(1.5rem,5vw,3.75rem);overflow-wrap:anywhere;line-height:1.2;}
+.breakdown > div {gap:12px;align-items:flex-start;}
+.breakdown span {min-width:0;overflow-wrap:anywhere;}
+.breakdown b, .metrics b, .demo-row b {overflow-wrap:anywhere;}
+.actions,.card-heading,.result-top {flex-wrap:wrap;}
+.input:focus-within,.search:focus-within,.demo-input:focus-within {outline:3px solid #639b78;outline-offset:3px;}
+input:focus-visible,select:focus-visible,textarea:focus-visible {outline:3px solid #639b78;outline-offset:3px;}
+.scenario-scope {margin:0 0 18px;font-size:14px;}
+.scenario-scope a {text-decoration:underline;color:var(--green);}
+.skip-link {position:absolute;left:16px;top:-100px;z-index:100;background:var(--panel);color:var(--ink);padding:14px;}
+.skip-link:focus {top:12px;}
+@media(max-width:760px){
+ .site-header .site-nav {gap:4px 14px;}
+ .site-nav a,.footer-top nav a {min-height:44px;display:inline-flex;align-items:center;}
+ .icon-button {min-width:44px;min-height:44px;}
+ button,summary,select {min-height:44px;}
+ .field input,.field select,.search input,.prose input,.prose textarea {font-size:16px;}
+ .search {flex-wrap:wrap;}.search input {flex:1;min-height:36px;}
+ .note,.prose p,.guide-content p {font-size:14px;}
+ .big-number {font-size:clamp(1.4rem,7vw,2rem);letter-spacing:-.5px;}
+ .metrics {gap:12px;}.metrics b {font-size:18px;}
+ .table-wrap {max-width:100%;overflow:auto;}
+ .source-list {grid-template-columns:1fr;}
+ .footer-top {gap:20px;}
+ .breadcrumb,.verdict {overflow-wrap:anywhere;}
+ .section .guide h2 {font-size:18px;}
+}
+@media(max-width:480px){.fields,.guide-grid,.metrics {grid-template-columns:1fr;}.actions button {flex:1 1 auto;}.site-header .site-nav {font-size:12px;}}
