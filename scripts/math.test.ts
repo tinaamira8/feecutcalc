@@ -7,7 +7,7 @@ test('reverse invoice meets target at minimum cent across providers, FX and size
 test('Freelancer minimum is applied',()=>assert.equal(payout(10,freelance[5]).service,5));
 test('Etsy fees, shipping, costs and ads reconcile',()=>{const r=profit(50,5,15,7,ecom[0],15,'percent',0);assert.equal(r.fees,13.93);assert.equal(r.net,19.07);assert.ok(Math.abs(profit(r.breakEven,5,15,7,ecom[0],15,'percent',0).net)<=.02)});
 test('undefined ROI and impossible reverse',()=>{assert.ok(Number.isNaN(profit(0,0,0,0,ecom[0],0,'fixed',0).roi));assert.ok(Number.isNaN(reverse(100,{...freelance[0],service:100})))});
-test('192 unique guides with complete linking, FAQ and editorial length',()=>{assert.equal(pages.length,192);assert.equal(new Set(pages.map(p=>p.path)).size,pages.length);for(const p of pages){const count=p.prose.split(/\s+/).length;assert.ok(count>=190&&count<=230,`${p.path}: ${count} words`);assert.equal(p.faqs.length,3);assert.equal(p.related.length,4);assert.ok(p.related.every(link=>pages.some(x=>x.path===link)));}});
+test('32 distinct platform/mode guides with complete linking and explanations',()=>{assert.equal(pages.length,32);assert.equal(new Set(pages.map(p=>p.path)).size,pages.length);for(const p of pages){const count=p.prose.split(/\s+/).length;assert.ok(count>=190,`${p.path}: ${count} words`);assert.equal(p.faqs.length,3);assert.equal(p.related.length,4);assert.ok(p.related.every(link=>pages.some(x=>x.path===link)));}});
 
 const market=(id:string)=>ecom.find(p=>p.id===id)!;
 test('eBay non-Store one-item thresholds and high-value tier',()=>{

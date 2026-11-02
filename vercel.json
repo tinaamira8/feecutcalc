@@ -5,10 +5,821 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/freelance-calculator/stripe-100-payout-calculator",
+      "destination": "/freelance-calculator/stripe-500-payout-calculator?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/stripe-reverse-fee-calculator-100",
+      "destination": "/freelance-calculator/stripe-reverse-fee-calculator-500?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/stripe-250-payout-calculator",
+      "destination": "/freelance-calculator/stripe-500-payout-calculator?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/stripe-reverse-fee-calculator-250",
+      "destination": "/freelance-calculator/stripe-reverse-fee-calculator-500?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/stripe-1000-payout-calculator",
+      "destination": "/freelance-calculator/stripe-500-payout-calculator?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/stripe-reverse-fee-calculator-1000",
+      "destination": "/freelance-calculator/stripe-reverse-fee-calculator-500?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/stripe-2500-payout-calculator",
+      "destination": "/freelance-calculator/stripe-500-payout-calculator?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/stripe-reverse-fee-calculator-2500",
+      "destination": "/freelance-calculator/stripe-reverse-fee-calculator-500?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/stripe-5000-payout-calculator",
+      "destination": "/freelance-calculator/stripe-500-payout-calculator?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/stripe-reverse-fee-calculator-5000",
+      "destination": "/freelance-calculator/stripe-reverse-fee-calculator-500?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/paypal-100-payout-calculator",
+      "destination": "/freelance-calculator/paypal-500-payout-calculator?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/paypal-reverse-fee-calculator-100",
+      "destination": "/freelance-calculator/paypal-reverse-fee-calculator-500?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/paypal-250-payout-calculator",
+      "destination": "/freelance-calculator/paypal-500-payout-calculator?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/paypal-reverse-fee-calculator-250",
+      "destination": "/freelance-calculator/paypal-reverse-fee-calculator-500?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/paypal-1000-payout-calculator",
+      "destination": "/freelance-calculator/paypal-500-payout-calculator?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/paypal-reverse-fee-calculator-1000",
+      "destination": "/freelance-calculator/paypal-reverse-fee-calculator-500?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/paypal-2500-payout-calculator",
+      "destination": "/freelance-calculator/paypal-500-payout-calculator?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/paypal-reverse-fee-calculator-2500",
+      "destination": "/freelance-calculator/paypal-reverse-fee-calculator-500?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/paypal-5000-payout-calculator",
+      "destination": "/freelance-calculator/paypal-500-payout-calculator?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/paypal-reverse-fee-calculator-5000",
+      "destination": "/freelance-calculator/paypal-reverse-fee-calculator-500?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/upwork-100-payout-calculator",
+      "destination": "/freelance-calculator/upwork-500-payout-calculator?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/upwork-reverse-fee-calculator-100",
+      "destination": "/freelance-calculator/upwork-reverse-fee-calculator-500?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/upwork-250-payout-calculator",
+      "destination": "/freelance-calculator/upwork-500-payout-calculator?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/upwork-reverse-fee-calculator-250",
+      "destination": "/freelance-calculator/upwork-reverse-fee-calculator-500?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/upwork-1000-payout-calculator",
+      "destination": "/freelance-calculator/upwork-500-payout-calculator?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/upwork-reverse-fee-calculator-1000",
+      "destination": "/freelance-calculator/upwork-reverse-fee-calculator-500?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/upwork-2500-payout-calculator",
+      "destination": "/freelance-calculator/upwork-500-payout-calculator?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/upwork-reverse-fee-calculator-2500",
+      "destination": "/freelance-calculator/upwork-reverse-fee-calculator-500?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/upwork-5000-payout-calculator",
+      "destination": "/freelance-calculator/upwork-500-payout-calculator?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/upwork-reverse-fee-calculator-5000",
+      "destination": "/freelance-calculator/upwork-reverse-fee-calculator-500?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/fiverr-100-payout-calculator",
+      "destination": "/freelance-calculator/fiverr-500-payout-calculator?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/fiverr-reverse-fee-calculator-100",
+      "destination": "/freelance-calculator/fiverr-reverse-fee-calculator-500?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/fiverr-250-payout-calculator",
+      "destination": "/freelance-calculator/fiverr-500-payout-calculator?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/fiverr-reverse-fee-calculator-250",
+      "destination": "/freelance-calculator/fiverr-reverse-fee-calculator-500?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/fiverr-1000-payout-calculator",
+      "destination": "/freelance-calculator/fiverr-500-payout-calculator?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/fiverr-reverse-fee-calculator-1000",
+      "destination": "/freelance-calculator/fiverr-reverse-fee-calculator-500?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/fiverr-2500-payout-calculator",
+      "destination": "/freelance-calculator/fiverr-500-payout-calculator?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/fiverr-reverse-fee-calculator-2500",
+      "destination": "/freelance-calculator/fiverr-reverse-fee-calculator-500?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/fiverr-5000-payout-calculator",
+      "destination": "/freelance-calculator/fiverr-500-payout-calculator?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/fiverr-reverse-fee-calculator-5000",
+      "destination": "/freelance-calculator/fiverr-reverse-fee-calculator-500?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/toptal-100-payout-calculator",
+      "destination": "/freelance-calculator/toptal-500-payout-calculator?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/toptal-reverse-fee-calculator-100",
+      "destination": "/freelance-calculator/toptal-reverse-fee-calculator-500?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/toptal-250-payout-calculator",
+      "destination": "/freelance-calculator/toptal-500-payout-calculator?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/toptal-reverse-fee-calculator-250",
+      "destination": "/freelance-calculator/toptal-reverse-fee-calculator-500?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/toptal-1000-payout-calculator",
+      "destination": "/freelance-calculator/toptal-500-payout-calculator?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/toptal-reverse-fee-calculator-1000",
+      "destination": "/freelance-calculator/toptal-reverse-fee-calculator-500?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/toptal-2500-payout-calculator",
+      "destination": "/freelance-calculator/toptal-500-payout-calculator?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/toptal-reverse-fee-calculator-2500",
+      "destination": "/freelance-calculator/toptal-reverse-fee-calculator-500?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/toptal-5000-payout-calculator",
+      "destination": "/freelance-calculator/toptal-500-payout-calculator?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/toptal-reverse-fee-calculator-5000",
+      "destination": "/freelance-calculator/toptal-reverse-fee-calculator-500?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/freelancer-100-payout-calculator",
+      "destination": "/freelance-calculator/freelancer-500-payout-calculator?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/freelancer-reverse-fee-calculator-100",
+      "destination": "/freelance-calculator/freelancer-reverse-fee-calculator-500?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/freelancer-250-payout-calculator",
+      "destination": "/freelance-calculator/freelancer-500-payout-calculator?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/freelancer-reverse-fee-calculator-250",
+      "destination": "/freelance-calculator/freelancer-reverse-fee-calculator-500?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/freelancer-1000-payout-calculator",
+      "destination": "/freelance-calculator/freelancer-500-payout-calculator?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/freelancer-reverse-fee-calculator-1000",
+      "destination": "/freelance-calculator/freelancer-reverse-fee-calculator-500?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/freelancer-2500-payout-calculator",
+      "destination": "/freelance-calculator/freelancer-500-payout-calculator?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/freelancer-reverse-fee-calculator-2500",
+      "destination": "/freelance-calculator/freelancer-reverse-fee-calculator-500?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/freelancer-5000-payout-calculator",
+      "destination": "/freelance-calculator/freelancer-500-payout-calculator?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/freelancer-reverse-fee-calculator-5000",
+      "destination": "/freelance-calculator/freelancer-reverse-fee-calculator-500?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/wise-100-payout-calculator",
+      "destination": "/freelance-calculator/wise-500-payout-calculator?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/wise-reverse-fee-calculator-100",
+      "destination": "/freelance-calculator/wise-reverse-fee-calculator-500?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/wise-250-payout-calculator",
+      "destination": "/freelance-calculator/wise-500-payout-calculator?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/wise-reverse-fee-calculator-250",
+      "destination": "/freelance-calculator/wise-reverse-fee-calculator-500?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/wise-1000-payout-calculator",
+      "destination": "/freelance-calculator/wise-500-payout-calculator?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/wise-reverse-fee-calculator-1000",
+      "destination": "/freelance-calculator/wise-reverse-fee-calculator-500?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/wise-2500-payout-calculator",
+      "destination": "/freelance-calculator/wise-500-payout-calculator?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/wise-reverse-fee-calculator-2500",
+      "destination": "/freelance-calculator/wise-reverse-fee-calculator-500?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/wise-5000-payout-calculator",
+      "destination": "/freelance-calculator/wise-500-payout-calculator?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/wise-reverse-fee-calculator-5000",
+      "destination": "/freelance-calculator/wise-reverse-fee-calculator-500?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/payoneer-100-payout-calculator",
+      "destination": "/freelance-calculator/payoneer-500-payout-calculator?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/payoneer-reverse-fee-calculator-100",
+      "destination": "/freelance-calculator/payoneer-reverse-fee-calculator-500?amount=100",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/payoneer-250-payout-calculator",
+      "destination": "/freelance-calculator/payoneer-500-payout-calculator?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/payoneer-reverse-fee-calculator-250",
+      "destination": "/freelance-calculator/payoneer-reverse-fee-calculator-500?amount=250",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/payoneer-1000-payout-calculator",
+      "destination": "/freelance-calculator/payoneer-500-payout-calculator?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/payoneer-reverse-fee-calculator-1000",
+      "destination": "/freelance-calculator/payoneer-reverse-fee-calculator-500?amount=1000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/payoneer-2500-payout-calculator",
+      "destination": "/freelance-calculator/payoneer-500-payout-calculator?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/payoneer-reverse-fee-calculator-2500",
+      "destination": "/freelance-calculator/payoneer-reverse-fee-calculator-500?amount=2500",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/payoneer-5000-payout-calculator",
+      "destination": "/freelance-calculator/payoneer-500-payout-calculator?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/freelance-calculator/payoneer-reverse-fee-calculator-5000",
+      "destination": "/freelance-calculator/payoneer-reverse-fee-calculator-500?amount=5000",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/etsy-fee-calculator-15-dollar-item",
+      "destination": "/ecom-calculator/etsy-fee-calculator-50-dollar-item?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/etsy-fee-calculator-15-dollar-item-with-ads",
+      "destination": "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/etsy-fee-calculator-25-dollar-item",
+      "destination": "/ecom-calculator/etsy-fee-calculator-50-dollar-item?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/etsy-fee-calculator-25-dollar-item-with-ads",
+      "destination": "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/etsy-fee-calculator-100-dollar-item",
+      "destination": "/ecom-calculator/etsy-fee-calculator-50-dollar-item?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/etsy-fee-calculator-100-dollar-item-with-ads",
+      "destination": "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/etsy-fee-calculator-250-dollar-item",
+      "destination": "/ecom-calculator/etsy-fee-calculator-50-dollar-item?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/etsy-fee-calculator-250-dollar-item-with-ads",
+      "destination": "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/etsy-fee-calculator-500-dollar-item",
+      "destination": "/ecom-calculator/etsy-fee-calculator-50-dollar-item?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/etsy-fee-calculator-500-dollar-item-with-ads",
+      "destination": "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/shopify-fee-calculator-15-dollar-item",
+      "destination": "/ecom-calculator/shopify-fee-calculator-50-dollar-item?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/shopify-fee-calculator-15-dollar-item-with-ads",
+      "destination": "/ecom-calculator/shopify-fee-calculator-50-dollar-item-with-ads?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/shopify-fee-calculator-25-dollar-item",
+      "destination": "/ecom-calculator/shopify-fee-calculator-50-dollar-item?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/shopify-fee-calculator-25-dollar-item-with-ads",
+      "destination": "/ecom-calculator/shopify-fee-calculator-50-dollar-item-with-ads?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/shopify-fee-calculator-100-dollar-item",
+      "destination": "/ecom-calculator/shopify-fee-calculator-50-dollar-item?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/shopify-fee-calculator-100-dollar-item-with-ads",
+      "destination": "/ecom-calculator/shopify-fee-calculator-50-dollar-item-with-ads?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/shopify-fee-calculator-250-dollar-item",
+      "destination": "/ecom-calculator/shopify-fee-calculator-50-dollar-item?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/shopify-fee-calculator-250-dollar-item-with-ads",
+      "destination": "/ecom-calculator/shopify-fee-calculator-50-dollar-item-with-ads?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/shopify-fee-calculator-500-dollar-item",
+      "destination": "/ecom-calculator/shopify-fee-calculator-50-dollar-item?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/shopify-fee-calculator-500-dollar-item-with-ads",
+      "destination": "/ecom-calculator/shopify-fee-calculator-50-dollar-item-with-ads?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fba-fee-calculator-15-dollar-item",
+      "destination": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fba-fee-calculator-15-dollar-item-with-ads",
+      "destination": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item-with-ads?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fba-fee-calculator-25-dollar-item",
+      "destination": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fba-fee-calculator-25-dollar-item-with-ads",
+      "destination": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item-with-ads?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fba-fee-calculator-100-dollar-item",
+      "destination": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fba-fee-calculator-100-dollar-item-with-ads",
+      "destination": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item-with-ads?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fba-fee-calculator-250-dollar-item",
+      "destination": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fba-fee-calculator-250-dollar-item-with-ads",
+      "destination": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item-with-ads?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fba-fee-calculator-500-dollar-item",
+      "destination": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fba-fee-calculator-500-dollar-item-with-ads",
+      "destination": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item-with-ads?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fbm-fee-calculator-15-dollar-item",
+      "destination": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fbm-fee-calculator-15-dollar-item-with-ads",
+      "destination": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item-with-ads?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fbm-fee-calculator-25-dollar-item",
+      "destination": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fbm-fee-calculator-25-dollar-item-with-ads",
+      "destination": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item-with-ads?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fbm-fee-calculator-100-dollar-item",
+      "destination": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fbm-fee-calculator-100-dollar-item-with-ads",
+      "destination": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item-with-ads?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fbm-fee-calculator-250-dollar-item",
+      "destination": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fbm-fee-calculator-250-dollar-item-with-ads",
+      "destination": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item-with-ads?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fbm-fee-calculator-500-dollar-item",
+      "destination": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/amazon-fbm-fee-calculator-500-dollar-item-with-ads",
+      "destination": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item-with-ads?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/ebay-fee-calculator-15-dollar-item",
+      "destination": "/ecom-calculator/ebay-fee-calculator-50-dollar-item?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/ebay-fee-calculator-15-dollar-item-with-ads",
+      "destination": "/ecom-calculator/ebay-fee-calculator-50-dollar-item-with-ads?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/ebay-fee-calculator-25-dollar-item",
+      "destination": "/ecom-calculator/ebay-fee-calculator-50-dollar-item?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/ebay-fee-calculator-25-dollar-item-with-ads",
+      "destination": "/ecom-calculator/ebay-fee-calculator-50-dollar-item-with-ads?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/ebay-fee-calculator-100-dollar-item",
+      "destination": "/ecom-calculator/ebay-fee-calculator-50-dollar-item?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/ebay-fee-calculator-100-dollar-item-with-ads",
+      "destination": "/ecom-calculator/ebay-fee-calculator-50-dollar-item-with-ads?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/ebay-fee-calculator-250-dollar-item",
+      "destination": "/ecom-calculator/ebay-fee-calculator-50-dollar-item?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/ebay-fee-calculator-250-dollar-item-with-ads",
+      "destination": "/ecom-calculator/ebay-fee-calculator-50-dollar-item-with-ads?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/ebay-fee-calculator-500-dollar-item",
+      "destination": "/ecom-calculator/ebay-fee-calculator-50-dollar-item?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/ebay-fee-calculator-500-dollar-item-with-ads",
+      "destination": "/ecom-calculator/ebay-fee-calculator-50-dollar-item-with-ads?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/tiktok-fee-calculator-15-dollar-item",
+      "destination": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/tiktok-fee-calculator-15-dollar-item-with-ads",
+      "destination": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item-with-ads?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/tiktok-fee-calculator-25-dollar-item",
+      "destination": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/tiktok-fee-calculator-25-dollar-item-with-ads",
+      "destination": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item-with-ads?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/tiktok-fee-calculator-100-dollar-item",
+      "destination": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/tiktok-fee-calculator-100-dollar-item-with-ads",
+      "destination": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item-with-ads?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/tiktok-fee-calculator-250-dollar-item",
+      "destination": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/tiktok-fee-calculator-250-dollar-item-with-ads",
+      "destination": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item-with-ads?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/tiktok-fee-calculator-500-dollar-item",
+      "destination": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/tiktok-fee-calculator-500-dollar-item-with-ads",
+      "destination": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item-with-ads?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/gumroad-fee-calculator-15-dollar-item",
+      "destination": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/gumroad-fee-calculator-15-dollar-item-with-ads",
+      "destination": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item-with-ads?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/gumroad-fee-calculator-25-dollar-item",
+      "destination": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/gumroad-fee-calculator-25-dollar-item-with-ads",
+      "destination": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item-with-ads?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/gumroad-fee-calculator-100-dollar-item",
+      "destination": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/gumroad-fee-calculator-100-dollar-item-with-ads",
+      "destination": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item-with-ads?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/gumroad-fee-calculator-250-dollar-item",
+      "destination": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/gumroad-fee-calculator-250-dollar-item-with-ads",
+      "destination": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item-with-ads?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/gumroad-fee-calculator-500-dollar-item",
+      "destination": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/gumroad-fee-calculator-500-dollar-item-with-ads",
+      "destination": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item-with-ads?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/stan-fee-calculator-15-dollar-item",
+      "destination": "/ecom-calculator/stan-fee-calculator-50-dollar-item?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/stan-fee-calculator-15-dollar-item-with-ads",
+      "destination": "/ecom-calculator/stan-fee-calculator-50-dollar-item-with-ads?amount=15&cogs=4.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/stan-fee-calculator-25-dollar-item",
+      "destination": "/ecom-calculator/stan-fee-calculator-50-dollar-item?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/stan-fee-calculator-25-dollar-item-with-ads",
+      "destination": "/ecom-calculator/stan-fee-calculator-50-dollar-item-with-ads?amount=25&cogs=7.5",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/stan-fee-calculator-100-dollar-item",
+      "destination": "/ecom-calculator/stan-fee-calculator-50-dollar-item?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/stan-fee-calculator-100-dollar-item-with-ads",
+      "destination": "/ecom-calculator/stan-fee-calculator-50-dollar-item-with-ads?amount=100&cogs=30",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/stan-fee-calculator-250-dollar-item",
+      "destination": "/ecom-calculator/stan-fee-calculator-50-dollar-item?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/stan-fee-calculator-250-dollar-item-with-ads",
+      "destination": "/ecom-calculator/stan-fee-calculator-50-dollar-item-with-ads?amount=250&cogs=75",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/stan-fee-calculator-500-dollar-item",
+      "destination": "/ecom-calculator/stan-fee-calculator-50-dollar-item?amount=500&cogs=150",
+      "permanent": true
+    },
+    {
+      "source": "/ecom-calculator/stan-fee-calculator-500-dollar-item-with-ads",
+      "destination": "/ecom-calculator/stan-fee-calculator-50-dollar-item-with-ads?amount=500&cogs=150",
+      "permanent": true
     }
   ]
 }

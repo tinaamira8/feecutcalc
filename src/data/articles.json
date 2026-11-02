@@ -35,7 +35,60 @@
         ]
       }
     ],
-    "sources": []
+    "sources": [],
+    "examples": [
+      {
+        "label": "Adding 3% is not enough",
+        "inputs": {
+          "platform": "stripe",
+          "amount": "515.3",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "0",
+          "cost": "0",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "0",
+          "processing": "3",
+          "fixed": "0.30",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 499.54
+      },
+      {
+        "label": "Smallest invoice meeting the $500 target",
+        "inputs": {
+          "platform": "stripe",
+          "amount": "500",
+          "mode": "reverse",
+          "shipping": "0",
+          "cogs": "0",
+          "cost": "0",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "0",
+          "processing": "3",
+          "fixed": "0.30",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 515.77
+      }
+    ],
+    "exampleNote": "The calculator rounds the fee to cents: $515.77 − $15.47 − $0.30 = $500.00. Rounding the unrounded algebra upward to $515.78 leaves one extra cent.",
+    "updated": "2026-11-03",
+    "pitfall": "Adding the fee percentage to the target instead of solving backwards."
   },
   {
     "path": "/articles/effective-payment-fee-small-orders",
@@ -79,7 +132,60 @@
         "title": "Stripe: US pricing",
         "url": "https://stripe.com/pricing"
       }
-    ]
+    ],
+    "examples": [
+      {
+        "label": "$10 payment",
+        "inputs": {
+          "platform": "stripe",
+          "amount": "10",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "0",
+          "cost": "0",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "0",
+          "processing": "3",
+          "fixed": "0.30",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 9.4
+      },
+      {
+        "label": "$100 payment",
+        "inputs": {
+          "platform": "stripe",
+          "amount": "100",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "0",
+          "cost": "0",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "0",
+          "processing": "3",
+          "fixed": "0.30",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 96.7
+      }
+    ],
+    "exampleNote": "Compare fees of $0.60 and $3.30: the fixed charge makes the smaller payment more expensive as a percentage. These are hypothetical 3% + $0.30 schedules.",
+    "updated": "2026-11-03",
+    "pitfall": "Treating monthly revenue as a single payment when each order incurs a fixed fee."
   },
   {
     "path": "/articles/profit-margin-versus-markup",
@@ -118,7 +224,60 @@
         ]
       }
     ],
-    "sources": []
+    "sources": [],
+    "examples": [
+      {
+        "label": "$50 sale with all stated costs",
+        "inputs": {
+          "platform": "shopify",
+          "amount": "50",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "20",
+          "cost": "5",
+          "ad": "4",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "10",
+          "processing": "0",
+          "fixed": "0.5",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 15.5
+      },
+      {
+        "label": "Product cost only: not final profit",
+        "inputs": {
+          "platform": "shopify",
+          "amount": "50",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "20",
+          "cost": "0",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "0",
+          "processing": "0",
+          "fixed": "0",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 30
+      }
+    ],
+    "exampleNote": "The product-cost-only comparison intentionally excludes every other expense. The full example produces a 31% margin, compared with a 60% product-cost margin.",
+    "updated": "2026-11-03",
+    "pitfall": "Calling the product-cost margin your final take-home margin."
   },
   {
     "path": "/articles/shipping-charges-and-profit",
@@ -162,7 +321,60 @@
         "title": "Etsy: Fees & Payments Policy",
         "url": "https://www.etsy.com/legal/fees/"
       }
-    ]
+    ],
+    "examples": [
+      {
+        "label": "$40 item plus $5 buyer shipping",
+        "inputs": {
+          "platform": "shopify",
+          "amount": "40",
+          "mode": "forward",
+          "shipping": "5",
+          "cogs": "15",
+          "cost": "6",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "10",
+          "processing": "0",
+          "fixed": "0.5",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 19
+      },
+      {
+        "label": "$45 item with free shipping",
+        "inputs": {
+          "platform": "shopify",
+          "amount": "45",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "15",
+          "cost": "6",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "10",
+          "processing": "0",
+          "fixed": "0.5",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 19
+      }
+    ],
+    "exampleNote": "Both presentations collect $45 and produce $19 under the hypothetical schedule. Buyer response to the offer is outside this calculation.",
+    "updated": "2026-11-03",
+    "pitfall": "Entering carrier expense as buyer-paid shipping, or counting postage twice."
   },
   {
     "path": "/articles/break-even-advertising-cost",
@@ -201,7 +413,60 @@
         ]
       }
     ],
-    "sources": []
+    "sources": [],
+    "examples": [
+      {
+        "label": "ROAS 3: $20 acquisition cost",
+        "inputs": {
+          "platform": "shopify",
+          "amount": "60",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "22",
+          "cost": "6",
+          "ad": "20",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "10",
+          "processing": "0",
+          "fixed": "0.5",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 5.5
+      },
+      {
+        "label": "$12 profit target: $13.50 acquisition cost",
+        "inputs": {
+          "platform": "shopify",
+          "amount": "60",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "22",
+          "cost": "6",
+          "ad": "13.5",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "10",
+          "processing": "0",
+          "fixed": "0.5",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 12
+      }
+    ],
+    "exampleNote": "The two scenarios leave $5.50 and $12 respectively. Neither predicts campaign performance; replace acquisition cost with measured, consistently attributed data.",
+    "updated": "2026-11-03",
+    "pitfall": "Confusing ROAS with profit or treating attributed orders as proven incremental sales."
   },
   {
     "path": "/articles/refunds-returns-profit-buffer",
@@ -245,7 +510,60 @@
         "title": "Stripe: pricing and refund fee information",
         "url": "https://stripe.com/pricing"
       }
-    ]
+    ],
+    "examples": [
+      {
+        "label": "Retained order before return allowance",
+        "inputs": {
+          "platform": "shopify",
+          "amount": "50",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "20",
+          "cost": "6.5",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "10",
+          "processing": "0",
+          "fixed": "0.5",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 18
+      },
+      {
+        "label": "Expected contribution with $2.40 allowance",
+        "inputs": {
+          "platform": "shopify",
+          "amount": "50",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "20",
+          "cost": "8.9",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "10",
+          "processing": "0",
+          "fixed": "0.5",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 15.6
+      }
+    ],
+    "exampleNote": "This constructed $50 order reproduces the article’s $18 baseline. The $2.40 expected-return allowance is added to overhead once; the calculator does not simulate individual refunds.",
+    "updated": "2026-11-03",
+    "pitfall": "Adding both the expected return allowance and the full return loss to the same baseline."
   },
   {
     "path": "/articles/freelance-project-rate-and-unpaid-time",
@@ -289,7 +607,60 @@
         "title": "Upwork: Freelancer Service Fee",
         "url": "https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee"
       }
-    ]
+    ],
+    "examples": [
+      {
+        "label": "$600 project payout before expenses",
+        "inputs": {
+          "platform": "upwork",
+          "amount": "600",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "0",
+          "cost": "0",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "10",
+          "processing": "0",
+          "fixed": "0",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 540
+      },
+      {
+        "label": "Invoice for $710 payout target",
+        "inputs": {
+          "platform": "upwork",
+          "amount": "710",
+          "mode": "reverse",
+          "shipping": "0",
+          "cogs": "0",
+          "cost": "0",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "10",
+          "processing": "0",
+          "fixed": "0",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 788.89
+      }
+    ],
+    "exampleNote": "The first result still needs the $30 direct expense and 17 hours accounted for separately: ($540 − $30) ÷ 17 = $30/hour. The reverse target includes $680 for time plus $30 expenses.",
+    "updated": "2026-11-03",
+    "pitfall": "Dividing payout only by production hours while ignoring revisions and administration."
   },
   {
     "path": "/articles/reconcile-calculator-with-platform-payout",
@@ -328,7 +699,36 @@
         ]
       }
     ],
-    "sources": []
+    "sources": [],
+    "examples": [
+      {
+        "label": "One transaction before batch adjustments",
+        "inputs": {
+          "platform": "stripe",
+          "amount": "100",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "0",
+          "cost": "0",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "0",
+          "processing": "2.9",
+          "fixed": "0.30",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 96.8
+      }
+    ],
+    "exampleNote": "This loads only the $100 transaction. Subtract the separate $20 refund adjustment outside the calculator to reconcile the $76.80 payout batch.",
+    "updated": "2026-11-03",
+    "pitfall": "Changing a transaction fee to force it to match a multi-order payout batch."
   },
   {
     "path": "/articles/discounts-and-profit-volume",
@@ -367,7 +767,60 @@
         ]
       }
     ],
-    "sources": []
+    "sources": [],
+    "examples": [
+      {
+        "label": "Ordinary price",
+        "inputs": {
+          "platform": "shopify",
+          "amount": "50",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "20",
+          "cost": "5",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "10",
+          "processing": "0",
+          "fixed": "0.5",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 19.5
+      },
+      {
+        "label": "10% discounted price",
+        "inputs": {
+          "platform": "shopify",
+          "amount": "45",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "20",
+          "cost": "5",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "10",
+          "processing": "0",
+          "fixed": "0.5",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 15
+      }
+    ],
+    "exampleNote": "A $5 price cut reduces contribution by $4.50. Matching $1,950 contribution requires 130 discounted orders instead of 100 ordinary orders.",
+    "updated": "2026-11-03",
+    "pitfall": "Assuming a 10% discount causes only a 10% reduction in profit."
   },
   {
     "path": "/articles/bundle-pricing-fixed-fees",
@@ -406,6 +859,83 @@
         ]
       }
     ],
-    "sources": []
+    "sources": [],
+    "examples": [
+      {
+        "label": "One of two separate payments",
+        "inputs": {
+          "platform": "stripe",
+          "amount": "20",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "0",
+          "cost": "0",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "0",
+          "processing": "3",
+          "fixed": "0.30",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 19.1
+      },
+      {
+        "label": "One bundle payment, equal revenue",
+        "inputs": {
+          "platform": "stripe",
+          "amount": "40",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "0",
+          "cost": "0",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "0",
+          "processing": "3",
+          "fixed": "0.30",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 38.5
+      },
+      {
+        "label": "Discounted bundle payment",
+        "inputs": {
+          "platform": "stripe",
+          "amount": "38",
+          "mode": "forward",
+          "shipping": "0",
+          "cogs": "0",
+          "cost": "0",
+          "ad": "0",
+          "adType": "fixed",
+          "fx": "0",
+          "international": "false",
+          "plan": "basic",
+          "gateway": "native",
+          "reg": "0",
+          "custom": "0",
+          "processing": "3",
+          "fixed": "0.30",
+          "minimum": "0",
+          "tax": "0"
+        },
+        "expected": 36.56
+      }
+    ],
+    "exampleNote": "Two separate payments yield $38.20 in total; one $40 payment yields $38.50. These payment-only examples exclude products and fulfillment. The $38 discounted bundle yields $36.56 before those costs.",
+    "updated": "2026-11-03",
+    "pitfall": "Claiming a fixed-fee saving when the items were already paid for in one checkout."
   }
 ]
