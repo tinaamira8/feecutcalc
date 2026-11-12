@@ -17,9 +17,9 @@ test('every article example reproduces its stated result from the shared URL',()
  }
 });
 test('consolidated guide redirects preserve amounts and product costs without chains',()=>{
- assert.equal(config.redirects.length,160);
- assert.equal(new Set(config.redirects.map(r=>r.source)).size,160);
- assert.equal(new Set(pages.map(p=>p.platform+':'+p.mode)).size,32);
+ assert.equal(config.redirects.length,176);
+ assert.equal(new Set(config.redirects.map(r=>r.source)).size,176);
+ assert.equal(new Set(pages.map(p=>p.platform+':'+p.mode)).size,16);
  for(const r of config.redirects){
   const dest=new URL(r.destination,'https://feecutcalc.com');
   const page=pages.find(p=>p.path===dest.pathname);
@@ -27,6 +27,8 @@ test('consolidated guide redirects preserve amounts and product costs without ch
   assert.ok(!config.redirects.some(other=>other.source===dest.pathname));
   const amount=Number(r.source.match(/(?:calculator-|item-)?(\d+)(?:-dollar-item(?:-with-ads)?|-payout-calculator)?$/)?.[1]);
   assert.equal(Number(dest.searchParams.get('amount')),amount,r.source);
+  if(r.source.includes('reverse-fee'))assert.equal(dest.searchParams.get('mode'),'reverse');
+  if(r.source.endsWith('-with-ads'))assert.equal(dest.searchParams.get('ad'),'15');
   if(page.kind==='ecom')assert.equal(Number(dest.searchParams.get('cogs')),amount*.3);
  }
 });

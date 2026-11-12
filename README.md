@@ -19,7 +19,7 @@ npm run audit:build
 npm run preview
 ```
 
-Upload `dist/` to a static host supporting directory index files. The build writes 200 complete HTML routes (192 guides and eight core pages), a 404 page, sitemap and robots file. Do not rewrite missing pages to the homepage; serve `404.html` with HTTP status 404. Netlify and Cloudflare Pages support the included `_headers`; configure equivalent headers on other hosts.
+Upload `dist/` to a static host supporting directory index files. The build writes 35 complete HTML routes (16 platform guides, 10 articles and nine core pages), a 404 page, sitemap and robots file. Do not rewrite missing pages to the homepage; serve `404.html` with HTTP status 404. Netlify and Cloudflare Pages support the included `_headers`; configure equivalent headers on other hosts.
 
 `npm run generate:seo` deterministically updates the committed scenario dataset and, if a dist build exists, prerenders the app. `prebuild` regenerates the dataset before Vite bundles it, preventing stale client content. Static generation uses the same React components and fee engine as the browser. It does not depend on external prerendering services.
 
@@ -47,7 +47,7 @@ New quote links preserve inputs in URL fragments; old query-based links are migr
 
 ## Trust pages and quote privacy
 
-Dedicated pages in `src/pages/` provide the 192-guide directory, methodology, contact composer, privacy policy and terms. The site uses the FeeMargin brand at https://feecutcalc.com, with contact@feecutcalc.com as its published contact address. Terms select Victoria, Australia. Verify mailbox delivery separately before relying on enquiries.
+Dedicated pages in `src/pages/` provide the platform-guide directory, methodology, contact composer, privacy policy and terms. The site uses the FeeMargin brand at https://feecutcalc.com, with contact@feecutcalc.com as its published contact address. Terms select Victoria, Australia. Verify mailbox delivery separately before relying on enquiries.
 
 Calculator quote state uses URL fragments, which are not included in HTTP requests. Legacy query links migrate in-browser after their initial request. `npm test` includes round-trip and migration coverage. The contact composer opens an email client and never sends automatically. The shared HTML head loads the Google AdSense script for ca-pub-1781335642360761 on all generated pages. Consent configuration and publisher approval remain separate requirements in AdSense.
 
@@ -57,4 +57,8 @@ Calculator quote state uses URL fragments, which are not included in HTTP reques
 
 ## Release checks and hosting headers
 
-`npm run release` requires TypeScript, calculation/quote tests, the production build and the 200-route static audit to pass. Vercel uses this command before deployment; GitHub Actions runs the same checks for main pushes and pull requests. `vercel.json` supplies nosniff, same-origin framing and strict-origin-when-cross-origin referrer headers. The `_headers` file remains for other static hosts.
+`npm run release` requires TypeScript, calculation/quote tests, the production build and the static route audit to pass. Vercel uses this command before deployment; GitHub Actions runs the same checks for main pushes and pull requests. `vercel.json` supplies nosniff, same-origin framing and strict-origin-when-cross-origin referrer headers. The `_headers` file remains for other static hosts.
+
+## November 12 content consolidation
+
+Paired guides are combined into 16 platform guides with four transaction-size comparisons and statement reconciliation instructions. Permanent redirects preserve legacy inputs without chains. Empty advertising placeholders were removed. Source rate review remains November 3; this update does not guarantee AdSense approval.

@@ -13,7 +13,8 @@
     "test": "tsx --test scripts/math.test.ts scripts/quote-url.test.ts scripts/article-examples.test.ts",
     "audit:build": "node scripts/audit-build.mjs",
     "release": "npm run check && npm test && npm run build && npm run audit:build",
-    "pretest": "node scripts/generate-seo-pages.mjs --data-only"
+    "pretest": "node scripts/generate-seo-pages.mjs --data-only",
+    "precheck": "node scripts/generate-seo-pages.mjs --data-only"
   },
   "dependencies": {
     "react": "^19.0.0",

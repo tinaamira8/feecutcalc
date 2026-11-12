@@ -27,3 +27,17 @@ const sitemapLocations=[...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]
 assert.equal(sitemapLocations.length,new Set(sitemapLocations).size,'Sitemap must not contain duplicate URLs');
 assert.deepEqual([...sitemapLocations].sort(),routes.map(r=>'https://feecutcalc.com'+r).sort(),'Sitemap must contain exactly the rendered public routes, excluding 404');
 console.log('PASS: unique sitemap URLs match public routes exactly.');
+
+const redirects=JSON.parse(fs.readFileSync('vercel.json','utf8')).redirects;
+assert.equal(new Set(redirects.map(r=>r.source)).size,redirects.length);
+for(const redirect of redirects){
+ const target=redirect.destination.split('?')[0];
+ assert.ok(routes.includes(target),`Redirect target must be live: ${target}`);
+ assert.ok(!routes.includes(redirect.source),`Redirect shadows live page: ${redirect.source}`);
+}
+for(const page of pages){
+ const html=fs.readFileSync(`dist${page.path}/index.html`,'utf8');
+ assert.ok(html.includes('Compare transaction sizes'));
+ assert.ok(!html.includes('Reserved advertising space'));
+}
+console.log('PASS: consolidated guides, comparison tables and direct legacy redirects.');

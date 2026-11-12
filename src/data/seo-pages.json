@@ -1,11 +1,37 @@
 [
   {
+    "examples": [
+      {
+        "amount": 10,
+        "fees": 0.59,
+        "result": 9.41,
+        "alternative": 10.61
+      },
+      {
+        "amount": 50,
+        "fees": 1.75,
+        "result": 48.25,
+        "alternative": 51.8
+      },
+      {
+        "amount": 500,
+        "fees": 14.8,
+        "result": 485.2,
+        "alternative": 515.24
+      },
+      {
+        "amount": 1000,
+        "fees": 29.3,
+        "result": 970.7,
+        "alternative": 1030.17
+      }
+    ],
     "path": "/freelance-calculator/stripe-500-payout-calculator",
     "kind": "freelance",
     "platform": "stripe",
     "amount": 500,
     "mode": "forward",
-    "title": "Stripe $500.00 payout calculator",
+    "title": "Stripe: payout and reverse invoice guide",
     "verdict": "A $500.00 Stripe invoice leaves $485.20 after modeled fees.",
     "prose": "A $500.00 Stripe invoice leaves $485.20 after modeled fees. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $14.80 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nCheck whether the payment is a domestic online card charge before using this preset. Separate invoice software charges, international-card additions and FX from the base processing fee. Compare a single payment with a deposit and balance: splitting the same total can create another fixed charge.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $515.24. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -24,50 +50,45 @@
     ],
     "group": "Payment Processors",
     "related": [
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
       "/freelance-calculator/paypal-500-payout-calculator",
-      "/freelance-calculator/paypal-reverse-fee-calculator-500",
-      "/freelance-calculator/upwork-500-payout-calculator"
+      "/freelance-calculator/upwork-500-payout-calculator",
+      "/freelance-calculator/fiverr-500-payout-calculator",
+      "/freelance-calculator/toptal-500-payout-calculator"
     ]
   },
   {
-    "path": "/freelance-calculator/stripe-reverse-fee-calculator-500",
-    "kind": "freelance",
-    "platform": "stripe",
-    "amount": 500,
-    "mode": "reverse",
-    "title": "Stripe reverse fee calculator: net $500.00",
-    "verdict": "To take home $500.00 with this Stripe fee assumption, invoice $515.24.",
-    "prose": "To take home $500.00 with this Stripe fee assumption, invoice $515.24. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $15.24 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nCheck whether the payment is a domestic online card charge before using this preset. Separate invoice software charges, international-card additions and FX from the base processing fee. Compare a single payment with a deposit and balance: splitting the same total can create another fixed charge.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $515.24. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nAfter calculating the required invoice, switch to payout mode and check that amount against the same fee assumptions. Keep the target separate from business expenses and taxes; covering payment fees alone does not cover the full cost of the project.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Stripe $500.00 estimate include?",
-        "a": "To take home $500.00 with this Stripe fee assumption, invoice $515.24. US domestic online cards. International cards and currency conversion cost extra."
+        "amount": 10,
+        "fees": 0.84,
+        "result": 9.16,
+        "alternative": 10.87
       },
       {
-        "q": "Can I change the $500.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 2.24,
+        "result": 47.76,
+        "alternative": 52.32
       },
       {
-        "q": "How do I cover Stripe fees in my quote?",
-        "a": "Use reverse mode. With these defaults, a $500.00 target requires $515.24. Check your agreement before passing costs to customers."
+        "amount": 500,
+        "fees": 17.94,
+        "result": 482.06,
+        "alternative": 518.59
+      },
+      {
+        "amount": 1000,
+        "fees": 35.39,
+        "result": 964.61,
+        "alternative": 1036.67
       }
     ],
-    "group": "Payment Processors",
-    "related": [
-      "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/paypal-500-payout-calculator",
-      "/freelance-calculator/paypal-reverse-fee-calculator-500",
-      "/freelance-calculator/upwork-500-payout-calculator"
-    ]
-  },
-  {
     "path": "/freelance-calculator/paypal-500-payout-calculator",
     "kind": "freelance",
     "platform": "paypal",
     "amount": 500,
     "mode": "forward",
-    "title": "PayPal $500.00 payout calculator",
+    "title": "PayPal: payout and reverse invoice guide",
     "verdict": "A $500.00 PayPal invoice leaves $482.06 after modeled fees.",
     "prose": "A $500.00 PayPal invoice leaves $482.06 after modeled fees. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $17.94 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nIdentify the PayPal payment product on the transaction statement first. Checkout, card processing and other products are not interchangeable. Keep the international-payment setting separate from currency conversion, and compare deductions in the settlement currency.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $518.59. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -86,50 +107,45 @@
     ],
     "group": "Payment Processors",
     "related": [
-      "/freelance-calculator/paypal-reverse-fee-calculator-500",
       "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/upwork-500-payout-calculator"
+      "/freelance-calculator/upwork-500-payout-calculator",
+      "/freelance-calculator/fiverr-500-payout-calculator",
+      "/freelance-calculator/toptal-500-payout-calculator"
     ]
   },
   {
-    "path": "/freelance-calculator/paypal-reverse-fee-calculator-500",
-    "kind": "freelance",
-    "platform": "paypal",
-    "amount": 500,
-    "mode": "reverse",
-    "title": "PayPal reverse fee calculator: net $500.00",
-    "verdict": "To take home $500.00 with this PayPal fee assumption, invoice $518.59.",
-    "prose": "To take home $500.00 with this PayPal fee assumption, invoice $518.59. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $18.59 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nIdentify the PayPal payment product on the transaction statement first. Checkout, card processing and other products are not interchangeable. Keep the international-payment setting separate from currency conversion, and compare deductions in the settlement currency.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $518.59. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nAfter calculating the required invoice, switch to payout mode and check that amount against the same fee assumptions. Keep the target separate from business expenses and taxes; covering payment fees alone does not cover the full cost of the project.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this PayPal $500.00 estimate include?",
-        "a": "To take home $500.00 with this PayPal fee assumption, invoice $518.59. Illustrative US PayPal Checkout rate; payment product and country change pricing."
+        "amount": 10,
+        "fees": 1,
+        "result": 9,
+        "alternative": 11.11
       },
       {
-        "q": "Can I change the $500.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 5,
+        "result": 45,
+        "alternative": 55.56
       },
       {
-        "q": "How do I cover PayPal fees in my quote?",
-        "a": "Use reverse mode. With these defaults, a $500.00 target requires $518.59. Check your agreement before passing costs to customers."
+        "amount": 500,
+        "fees": 50,
+        "result": 450,
+        "alternative": 555.56
+      },
+      {
+        "amount": 1000,
+        "fees": 100,
+        "result": 900,
+        "alternative": 1111.11
       }
     ],
-    "group": "Payment Processors",
-    "related": [
-      "/freelance-calculator/paypal-500-payout-calculator",
-      "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/upwork-500-payout-calculator"
-    ]
-  },
-  {
     "path": "/freelance-calculator/upwork-500-payout-calculator",
     "kind": "freelance",
     "platform": "upwork",
     "amount": 500,
     "mode": "forward",
-    "title": "Upwork $500.00 payout calculator",
+    "title": "Upwork: payout and reverse invoice guide",
     "verdict": "A $500.00 Upwork invoice leaves $450.00 after modeled fees.",
     "prose": "A $500.00 Upwork invoice leaves $450.00 after modeled fees. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $50.00, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nRead the service fee on the particular offer or contract before quoting. This guide starts at 10% only to demonstrate the calculation; use the contract percentage in Adjust fee assumptions. Track proposal, withdrawal and conversion costs separately when budgeting the project.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $555.56. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -148,50 +164,45 @@
     ],
     "group": "Freelance",
     "related": [
-      "/freelance-calculator/upwork-reverse-fee-calculator-500",
       "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
+      "/freelance-calculator/paypal-500-payout-calculator",
+      "/freelance-calculator/fiverr-500-payout-calculator",
+      "/freelance-calculator/toptal-500-payout-calculator"
     ]
   },
   {
-    "path": "/freelance-calculator/upwork-reverse-fee-calculator-500",
-    "kind": "freelance",
-    "platform": "upwork",
-    "amount": 500,
-    "mode": "reverse",
-    "title": "Upwork reverse fee calculator: net $500.00",
-    "verdict": "To take home $500.00 with this Upwork fee assumption, invoice $555.56.",
-    "prose": "To take home $500.00 with this Upwork fee assumption, invoice $555.56. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $55.56, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nRead the service fee on the particular offer or contract before quoting. This guide starts at 10% only to demonstrate the calculation; use the contract percentage in Adjust fee assumptions. Track proposal, withdrawal and conversion costs separately when budgeting the project.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $555.56. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nAfter calculating the required invoice, switch to payout mode and check that amount against the same fee assumptions. Keep the target separate from business expenses and taxes; covering payment fees alone does not cover the full cost of the project.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Upwork $500.00 estimate include?",
-        "a": "To take home $500.00 with this Upwork fee assumption, invoice $555.56. 10% scenario assumption. Actual contract fees range from 0–15%; enter your quoted rate. Withdrawal fees excluded."
+        "amount": 10,
+        "fees": 2,
+        "result": 8,
+        "alternative": 12.5
       },
       {
-        "q": "Can I change the $500.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 10,
+        "result": 40,
+        "alternative": 62.5
       },
       {
-        "q": "How do I cover Upwork fees in my quote?",
-        "a": "Use reverse mode. With these defaults, a $500.00 target requires $555.56. Check your agreement before passing costs to customers."
+        "amount": 500,
+        "fees": 100,
+        "result": 400,
+        "alternative": 625
+      },
+      {
+        "amount": 1000,
+        "fees": 200,
+        "result": 800,
+        "alternative": 1250
       }
     ],
-    "group": "Freelance",
-    "related": [
-      "/freelance-calculator/upwork-500-payout-calculator",
-      "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
-    ]
-  },
-  {
     "path": "/freelance-calculator/fiverr-500-payout-calculator",
     "kind": "freelance",
     "platform": "fiverr",
     "amount": 500,
     "mode": "forward",
-    "title": "Fiverr $500.00 payout calculator",
+    "title": "Fiverr: payout and reverse invoice guide",
     "verdict": "A $500.00 Fiverr invoice leaves $400.00 after modeled fees.",
     "prose": "A $500.00 Fiverr invoice leaves $400.00 after modeled fees. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $100.00, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nDistinguish the seller earnings amount from the price paid by the buyer. This scenario models the seller deduction only. Count revisions and delivery time when judging the job, and reconcile withdrawal costs separately from the order-level earnings.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $625.00. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -210,50 +221,45 @@
     ],
     "group": "Freelance",
     "related": [
-      "/freelance-calculator/fiverr-reverse-fee-calculator-500",
       "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
+      "/freelance-calculator/paypal-500-payout-calculator",
+      "/freelance-calculator/upwork-500-payout-calculator",
+      "/freelance-calculator/toptal-500-payout-calculator"
     ]
   },
   {
-    "path": "/freelance-calculator/fiverr-reverse-fee-calculator-500",
-    "kind": "freelance",
-    "platform": "fiverr",
-    "amount": 500,
-    "mode": "reverse",
-    "title": "Fiverr reverse fee calculator: net $500.00",
-    "verdict": "To take home $500.00 with this Fiverr fee assumption, invoice $625.00.",
-    "prose": "To take home $500.00 with this Fiverr fee assumption, invoice $625.00. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $125.00, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nDistinguish the seller earnings amount from the price paid by the buyer. This scenario models the seller deduction only. Count revisions and delivery time when judging the job, and reconcile withdrawal costs separately from the order-level earnings.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $625.00. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nAfter calculating the required invoice, switch to payout mode and check that amount against the same fee assumptions. Keep the target separate from business expenses and taxes; covering payment fees alone does not cover the full cost of the project.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Fiverr $500.00 estimate include?",
-        "a": "To take home $500.00 with this Fiverr fee assumption, invoice $625.00. Seller receives 80% of order value; withdrawal charges may apply."
+        "amount": 10,
+        "fees": 0,
+        "result": 10,
+        "alternative": 10
       },
       {
-        "q": "Can I change the $500.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 0,
+        "result": 50,
+        "alternative": 50
       },
       {
-        "q": "How do I cover Fiverr fees in my quote?",
-        "a": "Use reverse mode. With these defaults, a $500.00 target requires $625.00. Check your agreement before passing costs to customers."
+        "amount": 500,
+        "fees": 0,
+        "result": 500,
+        "alternative": 500
+      },
+      {
+        "amount": 1000,
+        "fees": 0,
+        "result": 1000,
+        "alternative": 1000
       }
     ],
-    "group": "Freelance",
-    "related": [
-      "/freelance-calculator/fiverr-500-payout-calculator",
-      "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
-    ]
-  },
-  {
     "path": "/freelance-calculator/toptal-500-payout-calculator",
     "kind": "freelance",
     "platform": "toptal",
     "amount": 500,
     "mode": "forward",
-    "title": "Toptal $500.00 payout calculator",
+    "title": "Toptal: payout and reverse invoice guide",
     "verdict": "A $500.00 Toptal invoice leaves $500.00 after modeled fees.",
     "prose": "A $500.00 Toptal invoice leaves $500.00 after modeled fees. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nThis preset cannot estimate Toptal client pricing or reveal a platform markup. The zero deduction is an editable starting assumption for agreed talent pay. Enter the deductions actually specified in your agreement; do not interpret the displayed payout as a published fee-free offer.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $500.00. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -272,50 +278,45 @@
     ],
     "group": "Freelance",
     "related": [
-      "/freelance-calculator/toptal-reverse-fee-calculator-500",
       "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
+      "/freelance-calculator/paypal-500-payout-calculator",
+      "/freelance-calculator/upwork-500-payout-calculator",
+      "/freelance-calculator/fiverr-500-payout-calculator"
     ]
   },
   {
-    "path": "/freelance-calculator/toptal-reverse-fee-calculator-500",
-    "kind": "freelance",
-    "platform": "toptal",
-    "amount": 500,
-    "mode": "reverse",
-    "title": "Toptal reverse fee calculator: net $500.00",
-    "verdict": "To take home $500.00 with this Toptal fee assumption, invoice $500.00.",
-    "prose": "To take home $500.00 with this Toptal fee assumption, invoice $500.00. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nThis preset cannot estimate Toptal client pricing or reveal a platform markup. The zero deduction is an editable starting assumption for agreed talent pay. Enter the deductions actually specified in your agreement; do not interpret the displayed payout as a published fee-free offer.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $500.00. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nAfter calculating the required invoice, switch to payout mode and check that amount against the same fee assumptions. Keep the target separate from business expenses and taxes; covering payment fees alone does not cover the full cost of the project.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Toptal $500.00 estimate include?",
-        "a": "To take home $500.00 with this Toptal fee assumption, invoice $500.00. Negotiated talent payout model; 0% is a custom assumption, not a published client markup. Enter your agreed deductions."
+        "amount": 10,
+        "fees": 5,
+        "result": 5,
+        "alternative": 15
       },
       {
-        "q": "Can I change the $500.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 5,
+        "result": 45,
+        "alternative": 55.56
       },
       {
-        "q": "How do I cover Toptal fees in my quote?",
-        "a": "Use reverse mode. With these defaults, a $500.00 target requires $500.00. Check your agreement before passing costs to customers."
+        "amount": 500,
+        "fees": 50,
+        "result": 450,
+        "alternative": 555.56
+      },
+      {
+        "amount": 1000,
+        "fees": 100,
+        "result": 900,
+        "alternative": 1111.11
       }
     ],
-    "group": "Freelance",
-    "related": [
-      "/freelance-calculator/toptal-500-payout-calculator",
-      "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
-    ]
-  },
-  {
     "path": "/freelance-calculator/freelancer-500-payout-calculator",
     "kind": "freelance",
     "platform": "freelancer",
     "amount": 500,
     "mode": "forward",
-    "title": "Freelancer.com $500.00 payout calculator",
+    "title": "Freelancer.com: payout and reverse invoice guide",
     "verdict": "A $500.00 Freelancer.com invoice leaves $450.00 after modeled fees.",
     "prose": "A $500.00 Freelancer.com invoice leaves $450.00 after modeled fees. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $50.00, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nChoose the project type before using the result: this preset is for fixed-price work with a minimum charge. On a small project, the minimum can dominate the effective rate. Hourly work, memberships, project upgrades and withdrawals need separate assumptions.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $555.56. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -334,50 +335,45 @@
     ],
     "group": "Freelance",
     "related": [
-      "/freelance-calculator/freelancer-reverse-fee-calculator-500",
       "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
+      "/freelance-calculator/paypal-500-payout-calculator",
+      "/freelance-calculator/upwork-500-payout-calculator",
+      "/freelance-calculator/fiverr-500-payout-calculator"
     ]
   },
   {
-    "path": "/freelance-calculator/freelancer-reverse-fee-calculator-500",
-    "kind": "freelance",
-    "platform": "freelancer",
-    "amount": 500,
-    "mode": "reverse",
-    "title": "Freelancer.com reverse fee calculator: net $500.00",
-    "verdict": "To take home $500.00 with this Freelancer.com fee assumption, invoice $555.56.",
-    "prose": "To take home $500.00 with this Freelancer.com fee assumption, invoice $555.56. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $55.56, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nChoose the project type before using the result: this preset is for fixed-price work with a minimum charge. On a small project, the minimum can dominate the effective rate. Hourly work, memberships, project upgrades and withdrawals need separate assumptions.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $555.56. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nAfter calculating the required invoice, switch to payout mode and check that amount against the same fee assumptions. Keep the target separate from business expenses and taxes; covering payment fees alone does not cover the full cost of the project.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Freelancer.com $500.00 estimate include?",
-        "a": "To take home $500.00 with this Freelancer.com fee assumption, invoice $555.56. Fixed-price project scenario: 10% or $5 minimum. Hourly projects differ."
+        "amount": 10,
+        "fees": 0.06,
+        "result": 9.94,
+        "alternative": 10.06
       },
       {
-        "q": "Can I change the $500.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 0.3,
+        "result": 49.7,
+        "alternative": 50.3
       },
       {
-        "q": "How do I cover Freelancer.com fees in my quote?",
-        "a": "Use reverse mode. With these defaults, a $500.00 target requires $555.56. Check your agreement before passing costs to customers."
+        "amount": 500,
+        "fees": 3,
+        "result": 497,
+        "alternative": 503.02
+      },
+      {
+        "amount": 1000,
+        "fees": 6,
+        "result": 994,
+        "alternative": 1006.04
       }
     ],
-    "group": "Freelance",
-    "related": [
-      "/freelance-calculator/freelancer-500-payout-calculator",
-      "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
-    ]
-  },
-  {
     "path": "/freelance-calculator/wise-500-payout-calculator",
     "kind": "freelance",
     "platform": "wise",
     "amount": 500,
     "mode": "forward",
-    "title": "Wise $500.00 payout calculator",
+    "title": "Wise: payout and reverse invoice guide",
     "verdict": "A $500.00 Wise invoice leaves $497.00 after modeled fees.",
     "prose": "A $500.00 Wise invoice leaves $497.00 after modeled fees. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $3.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nObtain a live quote for the specific currency pair, funding method and recipient route. The illustrative percentage here is not a Wise quotation. Replace both percentage and fixed components with the quote, and keep exchange-rate effects separate from an explicit transfer fee.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $503.02. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -396,50 +392,45 @@
     ],
     "group": "Payment Processors",
     "related": [
-      "/freelance-calculator/wise-reverse-fee-calculator-500",
       "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
+      "/freelance-calculator/paypal-500-payout-calculator",
+      "/freelance-calculator/upwork-500-payout-calculator",
+      "/freelance-calculator/fiverr-500-payout-calculator"
     ]
   },
   {
-    "path": "/freelance-calculator/wise-reverse-fee-calculator-500",
-    "kind": "freelance",
-    "platform": "wise",
-    "amount": 500,
-    "mode": "reverse",
-    "title": "Wise reverse fee calculator: net $500.00",
-    "verdict": "To take home $500.00 with this Wise fee assumption, invoice $503.02.",
-    "prose": "To take home $500.00 with this Wise fee assumption, invoice $503.02. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $3.02 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nObtain a live quote for the specific currency pair, funding method and recipient route. The illustrative percentage here is not a Wise quotation. Replace both percentage and fixed components with the quote, and keep exchange-rate effects separate from an explicit transfer fee.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $503.02. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nAfter calculating the required invoice, switch to payout mode and check that amount against the same fee assumptions. Keep the target separate from business expenses and taxes; covering payment fees alone does not cover the full cost of the project.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Wise $500.00 estimate include?",
-        "a": "To take home $500.00 with this Wise fee assumption, invoice $503.02. 0.6% illustrative transfer assumption only. Route, funding and currency determine your live quote."
+        "amount": 10,
+        "fees": 0.89,
+        "result": 9.11,
+        "alternative": 10.93
       },
       {
-        "q": "Can I change the $500.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 2.49,
+        "result": 47.51,
+        "alternative": 52.59
       },
       {
-        "q": "How do I cover Wise fees in my quote?",
-        "a": "Use reverse mode. With these defaults, a $500.00 target requires $503.02. Check your agreement before passing costs to customers."
+        "amount": 500,
+        "fees": 20.44,
+        "result": 479.56,
+        "alternative": 521.29
+      },
+      {
+        "amount": 1000,
+        "fees": 40.39,
+        "result": 959.61,
+        "alternative": 1042.07
       }
     ],
-    "group": "Payment Processors",
-    "related": [
-      "/freelance-calculator/wise-500-payout-calculator",
-      "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
-    ]
-  },
-  {
     "path": "/freelance-calculator/payoneer-500-payout-calculator",
     "kind": "freelance",
     "platform": "payoneer",
     "amount": 500,
     "mode": "forward",
-    "title": "Payoneer $500.00 payout calculator",
+    "title": "Payoneer: payout and reverse invoice guide",
     "verdict": "A $500.00 Payoneer invoice leaves $479.56 after modeled fees.",
     "prose": "A $500.00 Payoneer invoice leaves $479.56 after modeled fees. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $20.44 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nIdentify whether the transaction is a card payment request, a marketplace receipt or another product. The starting schedule is a ceiling example for card requests. Your actual percentage, fixed charges, account fees and withdrawal route may differ; use the account fee screen.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $521.29. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -458,50 +449,45 @@
     ],
     "group": "Payment Processors",
     "related": [
-      "/freelance-calculator/payoneer-reverse-fee-calculator-500",
       "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
+      "/freelance-calculator/paypal-500-payout-calculator",
+      "/freelance-calculator/upwork-500-payout-calculator",
+      "/freelance-calculator/fiverr-500-payout-calculator"
     ]
   },
   {
-    "path": "/freelance-calculator/payoneer-reverse-fee-calculator-500",
-    "kind": "freelance",
-    "platform": "payoneer",
-    "amount": 500,
-    "mode": "reverse",
-    "title": "Payoneer reverse fee calculator: net $500.00",
-    "verdict": "To take home $500.00 with this Payoneer fee assumption, invoice $521.29.",
-    "prose": "To take home $500.00 with this Payoneer fee assumption, invoice $521.29. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $21.29 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nIdentify whether the transaction is a card payment request, a marketplace receipt or another product. The starting schedule is a ceiling example for card requests. Your actual percentage, fixed charges, account fees and withdrawal route may differ; use the account fee screen.\n\nFor a $500.00 take-home target, the modeled reverse invoice is $521.29. Divide the target plus fixed fees by one minus the combined decimal rate, then check cent rounding and minimum charges. Adding a percentage to the target understates the required invoice because fees also apply to the added amount.\n\nAfter calculating the required invoice, switch to payout mode and check that amount against the same fee assumptions. Keep the target separate from business expenses and taxes; covering payment fees alone does not cover the full cost of the project.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Payoneer $500.00 estimate include?",
-        "a": "To take home $500.00 with this Payoneer fee assumption, invoice $521.29. Card-request ceiling example: up to 3.99% + $0.49, not a universal rate. Confirm your account fee; withdrawal and account fees excluded."
+        "amount": 10,
+        "fees": 1.4,
+        "result": 0.6,
+        "alternative": -0.9
       },
       {
-        "q": "Can I change the $500.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 5.2,
+        "result": 24.8,
+        "alternative": 17.3
       },
       {
-        "q": "How do I cover Payoneer fees in my quote?",
-        "a": "Use reverse mode. With these defaults, a $500.00 target requires $521.29. Check your agreement before passing costs to customers."
+        "amount": 500,
+        "fees": 47.95,
+        "result": 297.05,
+        "alternative": 222.05
+      },
+      {
+        "amount": 1000,
+        "fees": 95.45,
+        "result": 599.55,
+        "alternative": 449.55
       }
     ],
-    "group": "Payment Processors",
-    "related": [
-      "/freelance-calculator/payoneer-500-payout-calculator",
-      "/freelance-calculator/stripe-500-payout-calculator",
-      "/freelance-calculator/stripe-reverse-fee-calculator-500",
-      "/freelance-calculator/paypal-500-payout-calculator"
-    ]
-  },
-  {
     "path": "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
     "kind": "ecom",
     "platform": "etsy",
     "amount": 50,
     "mode": "standard",
-    "title": "Etsy fee calculator: $50.00 item",
+    "title": "Etsy: fees, profit and advertising guide",
     "verdict": "A $50.00 Etsy sale returns $24.80 profit with $15.00 product cost, $5 fulfillment and no advertising.",
     "prose": "A $50.00 Etsy sale returns $24.80 profit with $15.00 product cost, $5 fulfillment and no advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $3.25, payment processing is $1.75 and listing charges are $0.20. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nReconcile listing, transaction and payment-processing charges as separate lines. Enter buyer shipping as revenue and carrier costs as fulfillment. US sales tax affects the processing base in this model. Generic advertising is not an automatic implementation of Offsite Ads eligibility, caps or renewal rules.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising is excluded here, so adjust acquisition cost before committing to a price.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -520,50 +506,45 @@
     ],
     "group": "E-Commerce Marketplaces",
     "related": [
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
       "/ecom-calculator/shopify-fee-calculator-50-dollar-item",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item"
+      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item",
+      "/ecom-calculator/ebay-fee-calculator-50-dollar-item"
     ]
   },
   {
-    "path": "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-    "kind": "ecom",
-    "platform": "etsy",
-    "amount": 50,
-    "mode": "advertising",
-    "title": "Etsy fee calculator: $50.00 item with 15% ads",
-    "verdict": "A $50.00 Etsy sale returns $17.30 profit with $15.00 product cost, $5 fulfillment and 15% advertising.",
-    "prose": "A $50.00 Etsy sale returns $17.30 profit with $15.00 product cost, $5 fulfillment and 15% advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $3.25, payment processing is $1.75 and listing charges are $0.20. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nReconcile listing, transaction and payment-processing charges as separate lines. Enter buyer shipping as revenue and carrier costs as fulfillment. US sales tax affects the processing base in this model. Generic advertising is not an automatic implementation of Offsite Ads eligibility, caps or renewal rules.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising takes another 15% of receipts, so adjust acquisition cost before committing to a price.\n\nCompare this result with the same order without advertising. The difference is the modeled acquisition cost, not evidence that the campaign generated incremental sales. To preserve a target profit, subtract that target from pre-ad contribution before setting an advertising budget.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Etsy $50.00 estimate include?",
-        "a": "A $50.00 Etsy sale returns $17.30 profit with $15.00 product cost, $5 fulfillment and 15% advertising. US one-item sale: $0.20 listing, 6.5% transaction, and 3% + $0.25 processing. Processing includes entered sales tax; transaction fees exclude it. Ads are a generic uncapped cost, not an automatic Offsite Ads rule. Renewal and regional fees excluded."
+        "amount": 10,
+        "fees": 0.59,
+        "result": 1.41,
+        "alternative": -0.09
       },
       {
-        "q": "Can I change the $50.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 1.75,
+        "result": 28.25,
+        "alternative": 20.75
       },
       {
-        "q": "Does Etsy charge fees on shipping?",
-        "a": "This model applies percentage fees to item price plus buyer shipping. This starting scenario excludes sales tax. Etsy processing and eBay final value fees use the tax entered in the live calculator. Subscriptions, refunds, seller-fee taxes and other categories need separate cost assumptions."
+        "amount": 500,
+        "fees": 14.8,
+        "result": 330.2,
+        "alternative": 255.2
+      },
+      {
+        "amount": 1000,
+        "fees": 29.3,
+        "result": 665.7,
+        "alternative": 515.7
       }
     ],
-    "group": "E-Commerce Marketplaces",
-    "related": [
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item"
-    ]
-  },
-  {
     "path": "/ecom-calculator/shopify-fee-calculator-50-dollar-item",
     "kind": "ecom",
     "platform": "shopify",
     "amount": 50,
     "mode": "standard",
-    "title": "Shopify fee calculator: $50.00 item",
+    "title": "Shopify: fees, profit and advertising guide",
     "verdict": "A $50.00 Shopify sale returns $28.25 profit with $15.00 product cost, $5 fulfillment and no advertising.",
     "prose": "A $50.00 Shopify sale returns $28.25 profit with $15.00 product cost, $5 fulfillment and no advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $1.75 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nSelect the store plan and payment gateway before comparing results. A third-party gateway can add a Shopify surcharge alongside the processor charge. Allocate the monthly subscription across a realistic order count; a low-volume store has a larger subscription cost per order.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising is excluded here, so adjust acquisition cost before committing to a price.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -582,50 +563,45 @@
     ],
     "group": "E-Commerce Marketplaces",
     "related": [
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item-with-ads",
       "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item"
+      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item",
+      "/ecom-calculator/ebay-fee-calculator-50-dollar-item"
     ]
   },
   {
-    "path": "/ecom-calculator/shopify-fee-calculator-50-dollar-item-with-ads",
-    "kind": "ecom",
-    "platform": "shopify",
-    "amount": 50,
-    "mode": "advertising",
-    "title": "Shopify fee calculator: $50.00 item with 15% ads",
-    "verdict": "A $50.00 Shopify sale returns $20.75 profit with $15.00 product cost, $5 fulfillment and 15% advertising.",
-    "prose": "A $50.00 Shopify sale returns $20.75 profit with $15.00 product cost, $5 fulfillment and 15% advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $1.75 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nSelect the store plan and payment gateway before comparing results. A third-party gateway can add a Shopify surcharge alongside the processor charge. Allocate the monthly subscription across a realistic order count; a low-volume store has a larger subscription cost per order.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising takes another 15% of receipts, so adjust acquisition cost before committing to a price.\n\nCompare this result with the same order without advertising. The difference is the modeled acquisition cost, not evidence that the campaign generated incremental sales. To preserve a target profit, subtract that target from pre-ad contribution before setting an advertising budget.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Shopify $50.00 estimate include?",
-        "a": "A $50.00 Shopify sale returns $20.75 profit with $15.00 product cost, $5 fulfillment and 15% advertising. US standard online cards with Shopify Payments: Basic 2.9%, Grow 2.7%, Advanced 2.5%, plus $0.30. Third-party mode adds the plan surcharge to an illustrative external processor rate; enter that processor’s actual fees. Subscriptions excluded."
+        "amount": 10,
+        "fees": 1.5,
+        "result": 0.5,
+        "alternative": -1
       },
       {
-        "q": "Can I change the $50.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 7.5,
+        "result": 22.5,
+        "alternative": 15
       },
       {
-        "q": "Does Shopify charge fees on shipping?",
-        "a": "This model applies percentage fees to item price plus buyer shipping. This starting scenario excludes sales tax. Etsy processing and eBay final value fees use the tax entered in the live calculator. Subscriptions, refunds, seller-fee taxes and other categories need separate cost assumptions."
+        "amount": 500,
+        "fees": 75,
+        "result": 270,
+        "alternative": 195
+      },
+      {
+        "amount": 1000,
+        "fees": 150,
+        "result": 545,
+        "alternative": 395
       }
     ],
-    "group": "E-Commerce Marketplaces",
-    "related": [
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item"
-    ]
-  },
-  {
     "path": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item",
     "kind": "ecom",
     "platform": "amazon-fba",
     "amount": 50,
     "mode": "standard",
-    "title": "Amazon FBA fee calculator: $50.00 item",
+    "title": "Amazon FBA: fees, profit and advertising guide",
     "verdict": "A $50.00 Amazon FBA sale returns $22.50 profit with $15.00 product cost, $5 fulfillment and no advertising.",
     "prose": "A $50.00 Amazon FBA sale returns $22.50 profit with $15.00 product cost, $5 fulfillment and no advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $7.50, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nStart with the actual referral category, then obtain fulfillment costs for the packed size and weight. The Everything Else referral example is not an FBA quote. Replace the fulfillment placeholder with the applicable charge and allocate storage, inbound and plan costs without counting any cost twice.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising is excluded here, so adjust acquisition cost before committing to a price.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -644,50 +620,45 @@
     ],
     "group": "E-Commerce Marketplaces",
     "related": [
-      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item-with-ads",
       "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
+      "/ecom-calculator/shopify-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item",
+      "/ecom-calculator/ebay-fee-calculator-50-dollar-item"
     ]
   },
   {
-    "path": "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item-with-ads",
-    "kind": "ecom",
-    "platform": "amazon-fba",
-    "amount": 50,
-    "mode": "advertising",
-    "title": "Amazon FBA fee calculator: $50.00 item with 15% ads",
-    "verdict": "A $50.00 Amazon FBA sale returns $15.00 profit with $15.00 product cost, $5 fulfillment and 15% advertising.",
-    "prose": "A $50.00 Amazon FBA sale returns $15.00 profit with $15.00 product cost, $5 fulfillment and 15% advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $7.50, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nStart with the actual referral category, then obtain fulfillment costs for the packed size and weight. The Everything Else referral example is not an FBA quote. Replace the fulfillment placeholder with the applicable charge and allocate storage, inbound and plan costs without counting any cost twice.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising takes another 15% of receipts, so adjust acquisition cost before committing to a price.\n\nCompare this result with the same order without advertising. The difference is the modeled acquisition cost, not evidence that the campaign generated incremental sales. To preserve a target profit, subtract that target from pre-ad contribution before setting an advertising budget.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Amazon FBA $50.00 estimate include?",
-        "a": "A $50.00 Amazon FBA sale returns $15.00 profit with $15.00 product cost, $5 fulfillment and 15% advertising. US Everything Else category example: 15% with a $0.30 referral minimum per item. FBA fulfillment, storage, inbound and selling-plan costs must be entered separately."
+        "amount": 10,
+        "fees": 1.5,
+        "result": 0.5,
+        "alternative": -1
       },
       {
-        "q": "Can I change the $50.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 7.5,
+        "result": 22.5,
+        "alternative": 15
       },
       {
-        "q": "Does Amazon FBA charge fees on shipping?",
-        "a": "This model applies percentage fees to item price plus buyer shipping. This starting scenario excludes sales tax. Etsy processing and eBay final value fees use the tax entered in the live calculator. Subscriptions, refunds, seller-fee taxes and other categories need separate cost assumptions."
+        "amount": 500,
+        "fees": 75,
+        "result": 270,
+        "alternative": 195
+      },
+      {
+        "amount": 1000,
+        "fees": 150,
+        "result": 545,
+        "alternative": 395
       }
     ],
-    "group": "E-Commerce Marketplaces",
-    "related": [
-      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
-    ]
-  },
-  {
     "path": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item",
     "kind": "ecom",
     "platform": "amazon-fbm",
     "amount": 50,
     "mode": "standard",
-    "title": "Amazon FBM fee calculator: $50.00 item",
+    "title": "Amazon FBM: fees, profit and advertising guide",
     "verdict": "A $50.00 Amazon FBM sale returns $22.50 profit with $15.00 product cost, $5 fulfillment and no advertising.",
     "prose": "A $50.00 Amazon FBM sale returns $22.50 profit with $15.00 product cost, $5 fulfillment and no advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $7.50, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nUse the referral category for the item, then enter your own postage, packaging and handling costs. Merchant fulfillment does not remove the referral fee or selling-plan cost. Compare the same basket with FBA only after including the different fulfillment and inventory costs.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising is excluded here, so adjust acquisition cost before committing to a price.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -706,50 +677,45 @@
     ],
     "group": "E-Commerce Marketplaces",
     "related": [
-      "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item-with-ads",
       "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
+      "/ecom-calculator/shopify-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item",
+      "/ecom-calculator/ebay-fee-calculator-50-dollar-item"
     ]
   },
   {
-    "path": "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item-with-ads",
-    "kind": "ecom",
-    "platform": "amazon-fbm",
-    "amount": 50,
-    "mode": "advertising",
-    "title": "Amazon FBM fee calculator: $50.00 item with 15% ads",
-    "verdict": "A $50.00 Amazon FBM sale returns $15.00 profit with $15.00 product cost, $5 fulfillment and 15% advertising.",
-    "prose": "A $50.00 Amazon FBM sale returns $15.00 profit with $15.00 product cost, $5 fulfillment and 15% advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $7.50, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nUse the referral category for the item, then enter your own postage, packaging and handling costs. Merchant fulfillment does not remove the referral fee or selling-plan cost. Compare the same basket with FBA only after including the different fulfillment and inventory costs.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising takes another 15% of receipts, so adjust acquisition cost before committing to a price.\n\nCompare this result with the same order without advertising. The difference is the modeled acquisition cost, not evidence that the campaign generated incremental sales. To preserve a target profit, subtract that target from pre-ad contribution before setting an advertising budget.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Amazon FBM $50.00 estimate include?",
-        "a": "A $50.00 Amazon FBM sale returns $15.00 profit with $15.00 product cost, $5 fulfillment and 15% advertising. US Everything Else category example: 15% with a $0.30 referral minimum per item. Other categories differ; merchant shipping and selling-plan costs are separate."
+        "amount": 10,
+        "fees": 1.66,
+        "result": 0.34,
+        "alternative": -1.16
       },
       {
-        "q": "Can I change the $50.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 7.2,
+        "result": 22.8,
+        "alternative": 15.3
       },
       {
-        "q": "Does Amazon FBM charge fees on shipping?",
-        "a": "This model applies percentage fees to item price plus buyer shipping. This starting scenario excludes sales tax. Etsy processing and eBay final value fees use the tax entered in the live calculator. Subscriptions, refunds, seller-fee taxes and other categories need separate cost assumptions."
+        "amount": 500,
+        "fees": 68.4,
+        "result": 276.6,
+        "alternative": 201.6
+      },
+      {
+        "amount": 1000,
+        "fees": 136.4,
+        "result": 558.6,
+        "alternative": 408.6
       }
     ],
-    "group": "E-Commerce Marketplaces",
-    "related": [
-      "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
-    ]
-  },
-  {
     "path": "/ecom-calculator/ebay-fee-calculator-50-dollar-item",
     "kind": "ecom",
     "platform": "ebay",
     "amount": 50,
     "mode": "standard",
-    "title": "eBay fee calculator: $50.00 item",
+    "title": "eBay: fees, profit and advertising guide",
     "verdict": "A $50.00 eBay sale returns $22.80 profit with $15.00 product cost, $5 fulfillment and no advertising.",
     "prose": "A $50.00 eBay sale returns $22.80 profit with $15.00 product cost, $5 fulfillment and no advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $7.20, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nConfirm category and Store status before using the most-categories non-Store preset. Enter tax collected even though it is not revenue, because it can increase the final-value-fee base. The order fee and high-value tier are modeled; seller-specific surcharges and other categories are not.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising is excluded here, so adjust acquisition cost before committing to a price.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -768,50 +734,45 @@
     ],
     "group": "E-Commerce Marketplaces",
     "related": [
-      "/ecom-calculator/ebay-fee-calculator-50-dollar-item-with-ads",
       "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
+      "/ecom-calculator/shopify-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item"
     ]
   },
   {
-    "path": "/ecom-calculator/ebay-fee-calculator-50-dollar-item-with-ads",
-    "kind": "ecom",
-    "platform": "ebay",
-    "amount": 50,
-    "mode": "advertising",
-    "title": "eBay fee calculator: $50.00 item with 15% ads",
-    "verdict": "A $50.00 eBay sale returns $15.30 profit with $15.00 product cost, $5 fulfillment and 15% advertising.",
-    "prose": "A $50.00 eBay sale returns $15.30 profit with $15.00 product cost, $5 fulfillment and 15% advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $7.20, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nConfirm category and Store status before using the most-categories non-Store preset. Enter tax collected even though it is not revenue, because it can increase the final-value-fee base. The order fee and high-value tier are modeled; seller-specific surcharges and other categories are not.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising takes another 15% of receipts, so adjust acquisition cost before committing to a price.\n\nCompare this result with the same order without advertising. The difference is the modeled acquisition cost, not evidence that the campaign generated incremental sales. To preserve a target profit, subtract that target from pre-ad contribution before setting an advertising budget.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this eBay $50.00 estimate include?",
-        "a": "A $50.00 eBay sale returns $15.30 profit with $15.00 product cost, $5 fulfillment and 15% advertising. US non-Store most-categories, one-item order: 13.6% through $7,500 then 2.35% on the excess; $0.30 per order up to $10, otherwise $0.40. Tax enters the fee base. Other categories and seller surcharges excluded."
+        "amount": 10,
+        "fees": 0.6,
+        "result": 1.4,
+        "alternative": -0.1
       },
       {
-        "q": "Can I change the $50.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 3,
+        "result": 27,
+        "alternative": 19.5
       },
       {
-        "q": "Does eBay charge fees on shipping?",
-        "a": "This model applies percentage fees to item price plus buyer shipping. This starting scenario excludes sales tax. Etsy processing and eBay final value fees use the tax entered in the live calculator. Subscriptions, refunds, seller-fee taxes and other categories need separate cost assumptions."
+        "amount": 500,
+        "fees": 30,
+        "result": 315,
+        "alternative": 240
+      },
+      {
+        "amount": 1000,
+        "fees": 60,
+        "result": 635,
+        "alternative": 485
       }
     ],
-    "group": "E-Commerce Marketplaces",
-    "related": [
-      "/ecom-calculator/ebay-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
-    ]
-  },
-  {
     "path": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item",
     "kind": "ecom",
     "platform": "tiktok",
     "amount": 50,
     "mode": "standard",
-    "title": "TikTok Shop fee calculator: $50.00 item",
+    "title": "TikTok Shop: fees, profit and advertising guide",
     "verdict": "A $50.00 TikTok Shop sale returns $27.00 profit with $15.00 product cost, $5 fulfillment and no advertising.",
     "prose": "A $50.00 TikTok Shop sale returns $27.00 profit with $15.00 product cost, $5 fulfillment and no advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $3.00, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nCheck the category and active terms in Seller Center. Separate referral fees from creator commissions, advertising and seller-funded discounts. Enter only the seller-funded cost in the relevant field; do not count a platform-funded promotion as your expense without checking the settlement.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising is excluded here, so adjust acquisition cost before committing to a price.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -830,50 +791,45 @@
     ],
     "group": "E-Commerce Marketplaces",
     "related": [
-      "/ecom-calculator/tiktok-fee-calculator-50-dollar-item-with-ads",
       "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
+      "/ecom-calculator/shopify-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item"
     ]
   },
   {
-    "path": "/ecom-calculator/tiktok-fee-calculator-50-dollar-item-with-ads",
-    "kind": "ecom",
-    "platform": "tiktok",
-    "amount": 50,
-    "mode": "advertising",
-    "title": "TikTok Shop fee calculator: $50.00 item with 15% ads",
-    "verdict": "A $50.00 TikTok Shop sale returns $19.50 profit with $15.00 product cost, $5 fulfillment and 15% advertising.",
-    "prose": "A $50.00 TikTok Shop sale returns $19.50 profit with $15.00 product cost, $5 fulfillment and 15% advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $3.00, payment processing is $0.00 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nCheck the category and active terms in Seller Center. Separate referral fees from creator commissions, advertising and seller-funded discounts. Enter only the seller-funded cost in the relevant field; do not count a platform-funded promotion as your expense without checking the settlement.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising takes another 15% of receipts, so adjust acquisition cost before committing to a price.\n\nCompare this result with the same order without advertising. The difference is the modeled acquisition cost, not evidence that the campaign generated incremental sales. To preserve a target profit, subtract that target from pre-ad contribution before setting an advertising budget.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this TikTok Shop $50.00 estimate include?",
-        "a": "A $50.00 TikTok Shop sale returns $19.50 profit with $15.00 product cost, $5 fulfillment and 15% advertising. US 6% category example, not all categories or promotional rates. No platform-funded discount assumed. Affiliate costs and tax on seller fees are separate; check Seller Center."
+        "amount": 10,
+        "fees": 2.09,
+        "result": -0.09,
+        "alternative": -1.59
       },
       {
-        "q": "Can I change the $50.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 7.25,
+        "result": 22.75,
+        "alternative": 15.25
       },
       {
-        "q": "Does TikTok Shop charge fees on shipping?",
-        "a": "This model applies percentage fees to item price plus buyer shipping. This starting scenario excludes sales tax. Etsy processing and eBay final value fees use the tax entered in the live calculator. Subscriptions, refunds, seller-fee taxes and other categories need separate cost assumptions."
+        "amount": 500,
+        "fees": 65.3,
+        "result": 279.7,
+        "alternative": 204.7
+      },
+      {
+        "amount": 1000,
+        "fees": 129.8,
+        "result": 565.2,
+        "alternative": 415.2
       }
     ],
-    "group": "E-Commerce Marketplaces",
-    "related": [
-      "/ecom-calculator/tiktok-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
-    ]
-  },
-  {
     "path": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item",
     "kind": "ecom",
     "platform": "gumroad",
     "amount": 50,
     "mode": "standard",
-    "title": "Gumroad fee calculator: $50.00 item",
+    "title": "Gumroad: fees, profit and advertising guide",
     "verdict": "A $50.00 Gumroad sale returns $22.75 profit with $15.00 product cost, $5 fulfillment and no advertising.",
     "prose": "A $50.00 Gumroad sale returns $22.75 profit with $15.00 product cost, $5 fulfillment and no advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $5.50, payment processing is $1.75 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nIdentify a direct sale versus a Discover sale before using this preset. Direct-card processing is modeled separately from the platform deduction. A Discover or eligible high-volume sale needs different assumptions; applying the direct defaults to all channels will misstate the payout.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising is excluded here, so adjust acquisition cost before committing to a price.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -892,50 +848,45 @@
     ],
     "group": "E-Commerce Marketplaces",
     "related": [
-      "/ecom-calculator/gumroad-fee-calculator-50-dollar-item-with-ads",
       "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
+      "/ecom-calculator/shopify-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item"
     ]
   },
   {
-    "path": "/ecom-calculator/gumroad-fee-calculator-50-dollar-item-with-ads",
-    "kind": "ecom",
-    "platform": "gumroad",
-    "amount": 50,
-    "mode": "advertising",
-    "title": "Gumroad fee calculator: $50.00 item with 15% ads",
-    "verdict": "A $50.00 Gumroad sale returns $15.25 profit with $15.00 product cost, $5 fulfillment and 15% advertising.",
-    "prose": "A $50.00 Gumroad sale returns $15.25 profit with $15.00 product cost, $5 fulfillment and 15% advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $5.50, payment processing is $1.75 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nIdentify a direct sale versus a Discover sale before using this preset. Direct-card processing is modeled separately from the platform deduction. A Discover or eligible high-volume sale needs different assumptions; applying the direct defaults to all channels will misstate the payout.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising takes another 15% of receipts, so adjust acquisition cost before committing to a price.\n\nCompare this result with the same order without advertising. The difference is the modeled acquisition cost, not evidence that the campaign generated incremental sales. To preserve a target profit, subtract that target from pre-ad contribution before setting an advertising budget.",
-    "faqs": [
+    "examples": [
       {
-        "q": "What does this Gumroad $50.00 estimate include?",
-        "a": "A $50.00 Gumroad sale returns $15.25 profit with $15.00 product cost, $5 fulfillment and 15% advertising. Standard direct card sale: 10% + $0.50, plus 2.9% + $0.30 processing. Discover uses 30% including processing; eligible high-volume direct sales use 5% + $0.50 plus processing. Override for your sale type."
+        "amount": 10,
+        "fees": 0.59,
+        "result": 1.41,
+        "alternative": -0.09
       },
       {
-        "q": "Can I change the $50.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
+        "amount": 50,
+        "fees": 1.75,
+        "result": 28.25,
+        "alternative": 20.75
       },
       {
-        "q": "Does Gumroad charge fees on shipping?",
-        "a": "This model applies percentage fees to item price plus buyer shipping. This starting scenario excludes sales tax. Etsy processing and eBay final value fees use the tax entered in the live calculator. Subscriptions, refunds, seller-fee taxes and other categories need separate cost assumptions."
+        "amount": 500,
+        "fees": 14.8,
+        "result": 330.2,
+        "alternative": 255.2
+      },
+      {
+        "amount": 1000,
+        "fees": 29.3,
+        "result": 665.7,
+        "alternative": 515.7
       }
     ],
-    "group": "E-Commerce Marketplaces",
-    "related": [
-      "/ecom-calculator/gumroad-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
-    ]
-  },
-  {
     "path": "/ecom-calculator/stan-fee-calculator-50-dollar-item",
     "kind": "ecom",
     "platform": "stan",
     "amount": 50,
     "mode": "standard",
-    "title": "Stan Store fee calculator: $50.00 item",
+    "title": "Stan Store: fees, profit and advertising guide",
     "verdict": "A $50.00 Stan Store sale returns $28.25 profit with $15.00 product cost, $5 fulfillment and no advertising.",
     "prose": "A $50.00 Stan Store sale returns $28.25 profit with $15.00 product cost, $5 fulfillment and no advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $1.75 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nNo platform transaction percentage does not mean selling is cost-free. Confirm the connected processor schedule and allocate the subscription across expected sales. For digital products, set product and fulfillment costs to your actual amounts instead of accepting the physical-product placeholders.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising is excluded here, so adjust acquisition cost before committing to a price.\n\nChange one assumption at a time and save each quote link. This makes it possible to distinguish a price change from a change in costs or fee rules. Compare the result with one completed transaction before using the same assumptions for a larger forecast.",
     "faqs": [
@@ -954,41 +905,10 @@
     ],
     "group": "E-Commerce Marketplaces",
     "related": [
-      "/ecom-calculator/stan-fee-calculator-50-dollar-item-with-ads",
       "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
-    ]
-  },
-  {
-    "path": "/ecom-calculator/stan-fee-calculator-50-dollar-item-with-ads",
-    "kind": "ecom",
-    "platform": "stan",
-    "amount": 50,
-    "mode": "advertising",
-    "title": "Stan Store fee calculator: $50.00 item with 15% ads",
-    "verdict": "A $50.00 Stan Store sale returns $20.75 profit with $15.00 product cost, $5 fulfillment and 15% advertising.",
-    "prose": "A $50.00 Stan Store sale returns $20.75 profit with $15.00 product cost, $5 fulfillment and 15% advertising. This scenario isolates one transaction in US dollars so you can distinguish revenue from spendable income. The result is a planning estimate rather than a settlement promise; your account agreement and country determine the actual deductions.\n\nFor this starting scenario, modeled platform charges are $0.00, payment processing is $1.75 and listing charges are $0.00. The platform-specific assumptions and official source are shown above this explanation. These are US scenario defaults, not a quote for every account or country. Percentage charges use their stated fee bases before product costs are deducted.\n\nNo platform transaction percentage does not mean selling is cost-free. Confirm the connected processor schedule and allocate the subscription across expected sales. For digital products, set product and fulfillment costs to your actual amounts instead of accepting the physical-product placeholders.\n\nFor this $50.00 item, product cost is set to $15.00 and fulfillment to $5. Shipping collected from customers increases the fee base; shipping paid to carriers reduces profit separately. Advertising takes another 15% of receipts, so adjust acquisition cost before committing to a price.\n\nCompare this result with the same order without advertising. The difference is the modeled acquisition cost, not evidence that the campaign generated incremental sales. To preserve a target profit, subtract that target from pre-ad contribution before setting an advertising budget.",
-    "faqs": [
-      {
-        "q": "What does this Stan Store $50.00 estimate include?",
-        "a": "A $50.00 Stan Store sale returns $20.75 profit with $15.00 product cost, $5 fulfillment and 15% advertising. No assumed platform transaction fee; Stripe example processing. Allocate subscription per order separately."
-      },
-      {
-        "q": "Can I change the $50.00 scenario?",
-        "a": "Yes. Edit any calculator input. Values are stored in the URL, so the share link preserves your assumptions. Export the breakdown as CSV for your own records."
-      },
-      {
-        "q": "Does Stan Store charge fees on shipping?",
-        "a": "This model applies percentage fees to item price plus buyer shipping. This starting scenario excludes sales tax. Etsy processing and eBay final value fees use the tax entered in the live calculator. Subscriptions, refunds, seller-fee taxes and other categories need separate cost assumptions."
-      }
-    ],
-    "group": "E-Commerce Marketplaces",
-    "related": [
-      "/ecom-calculator/stan-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item",
-      "/ecom-calculator/etsy-fee-calculator-50-dollar-item-with-ads",
-      "/ecom-calculator/shopify-fee-calculator-50-dollar-item"
+      "/ecom-calculator/shopify-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fba-fee-calculator-50-dollar-item",
+      "/ecom-calculator/amazon-fbm-fee-calculator-50-dollar-item"
     ]
   }
 ]
