@@ -41,3 +41,13 @@ for(const page of pages){
  assert.ok(!html.includes('Reserved advertising space'));
 }
 console.log('PASS: consolidated guides, comparison tables and direct legacy redirects.');
+
+for(const route of ['/about','/contact','/privacy-policy','/terms-of-service','/articles',...articles.map(a=>a.path)]){
+ const html=fs.readFileSync(`dist${route}/index.html`,'utf8');
+ assert.ok(!html.includes('"@type":"SoftwareApplication"'),`${route}: non-calculator page must not claim to be software`);
+}
+const missing=fs.readFileSync('dist/404.html','utf8');
+assert.ok(missing.includes('name="robots" content="noindex"'));
+assert.ok(!missing.includes('rel="canonical"'));
+assert.ok(!missing.includes('"@type":"SoftwareApplication"'));
+console.log('PASS: page-type metadata and non-indexable missing-page response.');
